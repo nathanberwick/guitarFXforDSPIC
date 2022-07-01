@@ -1,0 +1,1825 @@
+<root>
+<document schema='101' license='1,University of Huddersfield,2R5ZZ8' title='' description='' target='PIC16.30F.30F4013' >
+	<config data='!0,8717!10,3f!20,87b3!30,7!40,c003%0,717%e,2%10,f%14,3%1f,0%20,3%24,3%27,1%2f,1%30,1%31,3%40,3%4e,1%4f,1' clkspd='117920000' simspd='9' usewdt='0' constif='0' />
+	<plugins >
+		<dll_dbg_icd enabled='0' >
+			<data name='debug' value='1' />
+			<data name='userpins' value='0' />
+			<data name='speed' value='1000' />
+			<data name='usev9' value='0' />
+			<data name='breaks' value='8' />
+			<data name='stacks' value='8' />
+			<data name='clkport' value='1' />
+			<data name='clkbit' value='6' />
+			<data name='dataport' value='1' />
+			<data name='databit' value='7' />
+			<data name='ghostype' value='0' />
+			<data name='monitor' value='1' />
+			<data name='ictloop' value='1' />
+			<data name='ictrate' value='1000' />
+			<data name='ictmask' value='-1' />
+			<data name='anlpres' value='19' />
+			<data name='digmask1' value='-1' />
+			<data name='digmask2' value='-1' />
+		</dll_dbg_icd>
+		<dll_models enabled='1' />
+		<dll_upgrader enabled='1' />
+		<dll_webhelp enabled='1' />
+	</plugins>
+	<supplement use='1' head='' body='' />
+	<debug />
+	<ghost >
+		<FK2 >
+			<data name='FK2D0' port='4294967295' pin='4294967295' />
+			<data name='FK2D1' port='4294967295' pin='4294967295' />
+			<data name='FK2D2' port='4294967295' pin='4294967295' />
+			<data name='FK2D3' port='4294967295' pin='4294967295' />
+			<data name='FK2D4' port='4294967295' pin='4294967295' />
+			<data name='FK2D5' port='4294967295' pin='4294967295' />
+			<data name='FK2D6' port='4294967295' pin='4294967295' />
+			<data name='FK2D7' port='4294967295' pin='4294967295' />
+			<data name='FK2D8' port='4294967295' pin='4294967295' />
+			<data name='FK2D9' port='4294967295' pin='4294967295' />
+			<data name='FK2D10' port='4294967295' pin='4294967295' />
+			<data name='FK2D11' port='4294967295' pin='4294967295' />
+			<data name='FK2D12' port='4294967295' pin='4294967295' />
+			<data name='FK2D13' port='4294967295' pin='4294967295' />
+			<data name='FK2D14' port='4294967295' pin='4294967295' />
+			<data name='FK2D15' port='4294967295' pin='4294967295' />
+			<data name='FK2A0' port='4294967295' pin='4294967295' />
+			<data name='FK2A1' port='4294967295' pin='4294967295' />
+			<data name='FK2A2' port='4294967295' pin='4294967295' />
+			<data name='FK2A3' port='4294967295' pin='4294967295' />
+			<data name='FK2A4' port='4294967295' pin='4294967295' />
+			<data name='FK2A5' port='4294967295' pin='4294967295' />
+		</FK2>
+		<ICD >
+			<data name='AnalogPrescaleValue' value='19' />
+			<data name='DigitalSampleRate' value='100000' />
+			<data name='BreakpointCount' value='8' />
+			<data name='CallStackDepthCount' value='8' />
+			<data name='ClockPort' value='1' />
+			<data name='ClockPin' value='6' />
+			<data name='DataPort' value='1' />
+			<data name='DataPin' value='7' />
+			<data name='UseDefaultPins' value='1' />
+			<data name='WrapEnabled' value='1' />
+			<data name='CommsDelayOverridden' value='0' />
+			<data name='CommsDelay' value='2' />
+			<data name='CalculatedCommsDelay' value='2' />
+		</ICD>
+		<pins >
+			<digital A='0' B='0' C='0' D='0' E='0' F='0' G='0' H='0' I='0' J='0' K='0' L='0' M='0' N='0' O='0' P='0' Q='0' R='0' S='0' T='0' U='0' V='0' W='0' X='0' Y='0' Z='0' />
+			<analog A='0' B='0' C='0' D='0' E='0' F='0' G='0' H='0' I='0' J='0' K='0' L='0' M='0' N='0' O='0' P='0' Q='0' R='0' S='0' T='0' U='0' V='0' W='0' X='0' Y='0' Z='0' />
+		</pins>
+	</ghost>
+	<components >
+		<settings autoimg='1' center='1' unitscale='0' fixedscale='0' fixedx='1' fixedy='1' fixedz='1' headcode='0' />
+		<definition guid='1c37ddd6-e5ad-4930-a367-13b18034e4db' vstate='40' vmin='0' vmaj='1' srcleaf='' visiblename='' description='' category='' catenable='1' author='' manuname='' manucode='' sysinfo='0' keywords='' dynamic='1' iconpath='' />
+		<component class_type='root' codename='panel' x='0' y='0' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+			<resources />
+			<properties >
+				<property name='Data' target='DSPFreqGen1::wave_data' typeid='10' hidden='0' locked='0' info='The raw waveform data' />
+			</properties>
+			<values >
+				<value target='DSPFreqGen1::wave_data' data='1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	1' />
+			</values>
+			<events />
+			<apis />
+			<variables >
+				<variable public='0' >
+					<def class_type='variable' name='FRACTREM' type='s16' description='' isconst='0' isinit='1' usrinit='341' setinit='341' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Voltage' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='FRAC' type='s16' description='' isconst='0' isinit='1' usrinit='341' setinit='341' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='PeriodCount' type='u16' description='' isconst='0' isinit='1' usrinit='100' setinit='100' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='VoltageADC' type='u16' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isB1Down' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahFc' type='f32' description='' isconst='0' isinit='1' usrinit='0.0' setinit='0.0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='chorusVoiceSumLong' type='s32' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='flangerDepth' type='u16' description='' isconst='0' isinit='1' usrinit='5100' setinit='5100' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='vibratoLUTVal' type='u16' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='vibratoDepth' type='u16' description='' isconst='0' isinit='1' usrinit='5100' setinit='5100' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='audioHoldB' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='LUTOffset' type='u16' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isB2Down' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='upDownSwitchState' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='bitcrusherADC' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='audioHoldA' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='circularBufferIndex' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='false' type='b1' description='' isconst='1' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='paramNumber' type='u8' description='number of parameters on current effect' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='chorusIndex' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' >
+						<array size='4' />
+					</def>
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='chorusLutTargetVal' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isB3Down' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='chorusVoiceSum' type='s16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='vibratoDepthDisplay' type='u8' description='' isconst='0' isinit='1' usrinit='50' setinit='50' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='fx3Counter' type='u8' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='vibratoLUTTarget' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='chorusIndexIterator' type='u8' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='chorusNumVoices' type='u8' description='' isconst='0' isinit='1' usrinit='2' setinit='2' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='lutVal' type='s16' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isB4Down' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahNorm' type='f32' description='' isconst='0' isinit='1' usrinit='0.0' setinit='0.0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahB_float' type='f32' description='' isconst='0' isinit='0' usrinit='0.0' setinit='' >
+						<array size='2' />
+					</def>
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='distortionGain' type='u16' description='' isconst='0' isinit='1' usrinit='1000' setinit='1000' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='distortionBiasDisplay' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='chorusSampleDelayVoice' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' >
+						<array size='4' />
+					</def>
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='lutCurrent' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahXFixed' type='s16' description='' isconst='0' isinit='0' usrinit='0' setinit='' >
+						<array size='4' />
+					</def>
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='flangerDepthDisplay' type='u8' description='' isconst='0' isinit='1' usrinit='50' setinit='50' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='audioSignal' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='fxBankSwitchState' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='SineData' type='s16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isB5Down' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='circularBuffer' type='s16' description='' isconst='0' isinit='0' usrinit='0' setinit='' >
+						<array size='700' />
+					</def>
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='paramCounter' type='u8' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahXInt' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahQ' type='f32' description='' isconst='0' isinit='1' usrinit='0.0' setinit='0.0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahA_float' type='f32' description='' isconst='0' isinit='0' usrinit='0.0' setinit='' >
+						<array size='2' />
+					</def>
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='distortionGainDisplay' type='s16' description='' isconst='0' isinit='1' usrinit='10' setinit='10' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isFX4' type='b1' description='effect bank 4' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='noiseCounter' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='flangerLUTVal' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isFX3' type='b1' description='is effect bank 3 on' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='circularBufferSize' type='u16' description='' isconst='0' isinit='1' usrinit='700' setinit='700' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='lutTarget' type='s16' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahADC' type='u16' description='' isconst='0' isinit='1' usrinit='1000' setinit='1000' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isB6Down' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isFX2' type='b1' description='is effect bank 2 on' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='SizeOfLUT' type='u16' description='' isconst='0' isinit='1' usrinit='250' setinit='250' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='signedAudio' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isFX1' type='b1' description='is bank 1 on' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahBuffer' type='s16' description='' isconst='0' isinit='0' usrinit='0' setinit='' >
+						<array size='4' />
+					</def>
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='bitcrusherResolution' type='u16' description='' isconst='0' isinit='1' usrinit='16' setinit='16' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='displayValue' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isFX0' type='b1' description='is bank 0 on' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='fx2Counter' type='u8' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='flangedSignal' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wetDryDisplay' type='u8' description='' isconst='0' isinit='1' usrinit='50' setinit='50' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahXFloat' type='f32' description='' isconst='0' isinit='1' usrinit='0.0' setinit='0.0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='distortionLong' type='s32' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='VoltageDisplay' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isB7Down' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='b5SwitchState' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='flangerIndex' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='vibratoIndex' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahHoldB' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wetDry' type='s16' description='' isconst='0' isinit='1' usrinit='16380' setinit='16380' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahLittleQ' type='f32' description='' isconst='0' isinit='1' usrinit='0.0' setinit='0.0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='distortionRailsDisplay' type='s16' description='' isconst='0' isinit='1' usrinit='100' setinit='100' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='bitCrusherSampleCounter' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahHoldA' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='LUT_index' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='FRACINIT' type='s16' description='fractional value based on two timers' isconst='0' isinit='1' usrinit='341' setinit='341' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='fx1Counter' type='u8' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='chorusLutVal' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='FreqDivider' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='distortionBias' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='distortionRails' type='s16' description='' isconst='0' isinit='1' usrinit='32760' setinit='32760' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='chorusLUTIndex' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='flangerLUTTarget' type='s16' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='true' type='b1' description='' isconst='1' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='isB0Down' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='fx0Counter' type='u8' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahQDamperInt' type='u16' description='' isconst='0' isinit='1' usrinit='20' setinit='20' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='wahOut' type='s16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+			</variables>
+			<macros >
+				<macro >
+					<flowline name='Timer1_Interrupt' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='output' title='Output' disable='1' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='1' exp='1' />
+						<command class_type='call' title='Call Macro' cmdcolor='1975743' cmdcolor_sec='1975743' macro='Read_ADC' >
+							<return exp='audioSignal' />
+						</command>
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='signedAudio = audioSignal - 32768' />
+						</command>
+						<command class_type='native' title='Circular Buffer' ccode='FCV_CIRCULARBUFFER[FCV_CIRCULARBUFFERINDEX] = FCV_SIGNEDAUDIO;
+FCV_CIRCULARBUFFERINDEX = (FCV_CIRCULARBUFFERINDEX+1)%(FCV_CIRCULARBUFFERSIZE);
+
+volatile register int A asm(&quot;A&quot;);
+volatile register int B asm(&quot;B&quot;);' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='native' title='audio processing' textarea='1464,-639,1464,-639' ccode='FCV_WAHBUFFER[0] = FCV_SIGNEDAUDIO &gt;&gt; 1;
+
+if (FCV_ISFX0)
+{
+            if (FCV_LUTTARGET != FCV_LUTVAL)
+            {
+                FCV_LUTCURRENT = FCV_LUTTARGET;
+                FCV_LUTTARGET = FCV_LUTVAL;
+
+                FCV_FRACTREM = FCV_FRACINIT;
+            }
+
+            CORCONbits.IF = 0; //fractional mode
+            asm(&quot;CLR A&quot;);
+            asm(&quot;MOV.W _FCV_LUTCURRENT, W4&quot;);
+            asm(&quot;MOV.W _FCV_LUTTARGET, W5&quot;);
+            asm(&quot;MOV.W _FCV_FRACTREM, W6&quot;);
+
+            asm(&quot;LAC W4, A&quot;);
+            asm(&quot;MSC W4*W6, A&quot;);
+            asm(&quot;MAC W5*W6, A&quot;);
+
+            FCV_SINEDATA = __builtin_ACCH(A);
+            CORCONbits.IF = 1; //integer mode
+
+            FCV_FRACTREM = FCV_FRACTREM + FCV_FRACINIT;
+
+    switch (FCV_FX0COUNTER)
+    {
+        case 0: //tremolo
+            
+            CORCONbits.IF = 0; //fractional mode
+            asm(&quot;CLR A&quot;);
+            asm(&quot;CLR B&quot;);
+
+            asm(&quot;MOV.W _FCV_SIGNEDAUDIO, W4&quot;);
+            asm(&quot;MOV.W _FCV_SINEDATA, W5&quot;);
+            asm(&quot;MPY W4*W5, B&quot;);
+
+            //do wet dry here
+                                          //w4 = dry
+            asm(&quot;SAC B, W5&quot;);             //w5 = wet
+            asm(&quot;CLR B&quot;);
+            asm(&quot;CLR A&quot;);
+            asm(&quot;MOV.W _FCV_WETDRY, W6&quot;); //w6 = mix
+
+            asm(&quot;LAC W4, A&quot;); //dry
+            asm(&quot;MSC W4*W6, A&quot;); // dry* -wDmix
+            asm(&quot;MAC W5*W6, A&quot;); // +wet*wDmix
+
+            //output
+            FCV_SIGNEDAUDIO = __builtin_ACCH(A);
+            asm(&quot;CLR B&quot;);
+            asm(&quot;CLR A&quot;);
+
+            CORCONbits.IF = 1; //integer mode
+            break;
+
+        case 1: //vibrato
+            FCV_VIBRATOLUTVAL = FCV_LUTVAL / FCV_VIBRATODEPTH;
+
+            if (FCV_VIBRATOLUTTARGET != FCV_VIBRATOLUTVAL)
+            {
+                FCV_LUTCURRENT = FCV_VIBRATOLUTTARGET;
+                FCV_VIBRATOLUTTARGET = FCV_VIBRATOLUTVAL;
+                FCV_FRAC = FCV_FRACINIT;
+            }
+
+            CORCONbits.IF = 0; //fractional mode
+            asm(&quot;CLR A&quot;);
+            asm(&quot;CLR B&quot;);
+
+            FCV_AUDIOHOLDA = FCV_CIRCULARBUFFER[(FCV_CIRCULARBUFFERINDEX + FCV_LUTCURRENT) % FCV_CIRCULARBUFFERSIZE];
+            FCV_AUDIOHOLDB = FCV_CIRCULARBUFFER[(FCV_CIRCULARBUFFERINDEX + FCV_VIBRATOLUTTARGET) % FCV_CIRCULARBUFFERSIZE];
+
+            asm(&quot;MOV.W _FCV_AUDIOHOLDA, W4&quot;);
+            asm(&quot;MOV.W _FCV_AUDIOHOLDB, W5&quot;);
+            asm(&quot;MOV.W _FCV_FRAC, W6&quot;);
+
+            asm(&quot;LAC W4, B&quot;);
+            asm(&quot;MSC W4*W6, B&quot;);
+            asm(&quot;MAC W5*W6, B&quot;);
+
+            FCV_SIGNEDAUDIO = __builtin_ACCH(B);
+            CORCONbits.IF = 1; //integer mode
+            FCV_FRAC = FCV_FRAC + FCV_FRACINIT;
+
+        break;
+    }
+}
+
+else if (FCV_ISFX1)
+{
+    switch (FCV_FX1COUNTER)
+    {
+        case 0: //chorus
+        //interpolate lut value
+        if (FCV_CHORUSLUTVAL != FCV_CHORUSLUTTARGETVAL)
+        {
+            if (FCV_CHORUSLUTVAL &lt; FCV_CHORUSLUTTARGETVAL)
+            {
+                FCV_CHORUSLUTVAL++;
+            }
+            else if (FCV_CHORUSLUTVAL &gt; FCV_CHORUSLUTTARGETVAL)
+            {
+                FCV_CHORUSLUTVAL--;
+            }
+        }
+        else
+        {
+            FCV_CHORUSLUTVAL = FCV_CHORUSLUTTARGETVAL;
+        }
+
+        //update read heads
+        for(FCV_CHORUSINDEXITERATOR = 0; FCV_CHORUSINDEXITERATOR &lt; 4; FCV_CHORUSINDEXITERATOR++)
+        {
+            FCV_CHORUSINDEX[FCV_CHORUSINDEXITERATOR] = (FCV_CIRCULARBUFFERINDEX + FCV_CHORUSSAMPLEDELAYVOICE[FCV_CHORUSINDEXITERATOR] + FCV_CHORUSLUTVAL )% (FCV_CIRCULARBUFFERSIZE);
+        } 
+
+
+        //create summed voices
+        FCV_CHORUSVOICESUMLONG = FCV_CIRCULARBUFFER[FCV_CHORUSINDEX[0]];
+        for (FCV_CHORUSINDEXITERATOR = 1; FCV_CHORUSINDEXITERATOR &lt; FCV_CHORUSNUMVOICES; FCV_CHORUSINDEXITERATOR++)
+        {
+           FCV_CHORUSVOICESUMLONG = FCV_CHORUSVOICESUMLONG + FCV_CIRCULARBUFFER[FCV_CHORUSINDEX[FCV_CHORUSINDEXITERATOR]];
+        }
+
+        //output TODO: requires variables
+        FCV_CHORUSVOICESUMLONG = FCV_CHORUSVOICESUMLONG / FCV_CHORUSNUMVOICES;
+        FCV_CHORUSVOICESUM = FCV_CHORUSVOICESUMLONG;
+
+        asm(&quot;CLR A&quot;);
+
+        asm(&quot;MOV.W _FCV_SIGNEDAUDIO, W4&quot;);    //dry
+        asm(&quot;MOV.W _FCV_CHORUSVOICESUM, W5&quot;); //wet
+        asm(&quot;MOV.W _FCV_WETDRY, W6&quot;);         //w6 = mix
+
+        asm(&quot;LAC W4, A&quot;); //dry
+        asm(&quot;MSC W4*W6, A&quot;); // dry* -wDmix
+        asm(&quot;MAC W5*W6, A&quot;); // +wet*wDmix
+
+        //output
+        FCV_SIGNEDAUDIO = __builtin_ACCH(A);
+        break;
+
+        case 1:
+        //flanger
+        FCV_FLANGERLUTVAL = FCV_LUTVAL / FCV_FLANGERDEPTH;
+
+        if (FCV_FLANGERLUTTARGET != FCV_FLANGERLUTVAL)
+        {
+            FCV_LUTCURRENT = FCV_FLANGERLUTTARGET;
+            FCV_FLANGERLUTTARGET = FCV_FLANGERLUTVAL;
+
+            FCV_FRAC = FCV_FRACINIT;
+        }
+        CORCONbits.IF = 0; //fractional mode
+        asm(&quot;CLR A&quot;);
+        asm(&quot;CLR B&quot;);
+
+        FCV_AUDIOHOLDA = FCV_CIRCULARBUFFER[(FCV_CIRCULARBUFFERINDEX + FCV_LUTCURRENT) % FCV_CIRCULARBUFFERSIZE];
+        FCV_AUDIOHOLDB = FCV_CIRCULARBUFFER[(FCV_CIRCULARBUFFERINDEX + FCV_FLANGERLUTTARGET) % FCV_CIRCULARBUFFERSIZE];
+
+        asm(&quot;MOV.W _FCV_AUDIOHOLDA, W4&quot;);
+        asm(&quot;MOV.W _FCV_AUDIOHOLDB, W5&quot;);
+
+        //asm(&quot;MOV.W _FCV_LUTCURRENT, W4&quot;);
+        //asm(&quot;MOV.W _FCV_FLANGERLUTTARGET, W5&quot;);
+        asm(&quot;MOV.W _FCV_FRAC, W6&quot;);
+
+        asm(&quot;LAC W4, A&quot;);
+        asm(&quot;MSC W4*W6, A&quot;);
+        asm(&quot;MAC W5*W6, A&quot;);
+
+        FCV_SINEDATA = __builtin_ACCH(A);
+        CORCONbits.IF = 1; //integer mode
+        FCV_FRAC = FCV_FRAC + FCV_FRACINIT;
+
+        FCV_SIGNEDAUDIO = (FCV_SINEDATA + FCV_SIGNEDAUDIO)/2; //output is 50/50
+        break;
+    }
+
+}
+//Bypass - no effect
+/*else if (FCV_ISFX2)
+{
+}*/
+
+else if (FCV_ISFX3)
+{
+    switch (FCV_FX3COUNTER)
+    {
+        case 0: //bitcrusher
+        FCV_BITCRUSHERSAMPLECOUNTER++;
+        if (FCV_BITCRUSHERSAMPLECOUNTER &gt;= FCV_BITCRUSHERADC)
+        {
+            FCV_BITCRUSHERSAMPLECOUNTER = 0;
+            FCV_SIGNEDAUDIO = FCV_CIRCULARBUFFER[(FCV_CIRCULARBUFFERINDEX + 2) % FCV_CIRCULARBUFFERSIZE]; // equal to previous sample in the buffer.
+            //output sample = last sample.
+        }
+
+        FCV_SIGNEDAUDIO = FCV_SIGNEDAUDIO &gt;&gt; (16-FCV_BITCRUSHERRESOLUTION);
+        FCV_SIGNEDAUDIO = FCV_SIGNEDAUDIO &lt;&lt; (16-FCV_BITCRUSHERRESOLUTION);
+
+        break;
+
+        case 1: // distortion
+        FCV_DISTORTIONLONG = FCV_SIGNEDAUDIO;
+        FCV_DISTORTIONLONG = FCV_DISTORTIONLONG + FCV_DISTORTIONBIAS;
+        FCV_DISTORTIONLONG = FCV_DISTORTIONLONG * (FCV_DISTORTIONGAIN/100);
+
+        if (FCV_DISTORTIONLONG &gt; FCV_DISTORTIONRAILS)
+        {
+            FCV_DISTORTIONLONG = FCV_DISTORTIONRAILS;
+        }
+        else if (FCV_DISTORTIONLONG &lt; -FCV_DISTORTIONRAILS)
+        {
+            FCV_DISTORTIONLONG = -FCV_DISTORTIONRAILS;
+        }
+        FCV_SIGNEDAUDIO = FCV_DISTORTIONLONG;
+        break;
+    }
+}
+
+else if (FCV_ISFX4) //wah
+{
+
+    asm(&quot;CLR A&quot;);
+    CORCONbits.IF   = 0; //fractional
+    CORCONbits.SATA = 1; //enable Sat in the first place
+
+    FCV_WAHHOLDA = FCV_WAHBUFFER[0];
+    FCV_WAHHOLDB = FCV_WAHXFIXED[0];
+    asm(&quot;MOV.W _FCV_WAHHOLDA, W4&quot;);
+    asm(&quot;MOV.W _FCV_WAHHOLDB, W5&quot;);
+    asm(&quot;MAC W4*W5, A&quot;);
+
+    FCV_WAHHOLDA = FCV_WAHBUFFER[1];
+    FCV_WAHHOLDB = FCV_WAHXFIXED[1];
+    asm(&quot;MOV.W _FCV_WAHHOLDA, W4&quot;);
+    asm(&quot;MOV.W _FCV_WAHHOLDB, W5&quot;);
+    asm(&quot;MSC W4*W5, A&quot;);
+
+    FCV_WAHHOLDA = FCV_WAHBUFFER[2];
+    FCV_WAHHOLDB = FCV_WAHXFIXED[2];
+    asm(&quot;MOV.W _FCV_WAHHOLDA, W4&quot;);
+    asm(&quot;MOV.W _FCV_WAHHOLDB, W5&quot;);
+    asm(&quot;MSC W4*W5, A&quot;);
+
+    FCV_WAHHOLDA = FCV_WAHBUFFER[3];
+    FCV_WAHHOLDB = FCV_WAHXFIXED[3];
+    asm(&quot;MOV.W _FCV_WAHHOLDA, W4&quot;);
+    asm(&quot;MOV.W _FCV_WAHHOLDB, W5&quot;);
+    asm(&quot;MSC W4*W5, A&quot;);
+    FCV_WAHOUT = __builtin_ACCH(A);
+    
+    CORCONbits.IF = 1;
+    CORCONbits.SATA = 0;
+
+    FCV_WAHOUT = FCV_WAHOUT * 2; //&lt;&lt; 2; //scaling from reduced coeffs //formerly *4
+    FCV_CHORUSVOICESUMLONG = FCV_WAHOUT;
+    FCV_CHORUSVOICESUMLONG = FCV_CHORUSVOICESUMLONG + (FCV_SIGNEDAUDIO/2);
+    //FCV_SIGNEDAUDIO = (FCV_SIGNEDAUDIO/4) + (FCV_WAHOUT/2);
+    FCV_SIGNEDAUDIO = FCV_CHORUSVOICESUMLONG;
+}
+
+//buffer handling
+FCV_WAHBUFFER[3] = FCV_WAHBUFFER[2];
+FCV_WAHBUFFER[2] = FCV_SIGNEDAUDIO;
+FCV_WAHBUFFER[1] = FCV_WAHBUFFER[0];' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='audioSignal = signedAudio + 32768' />
+						</command>
+						<command class_type='call' title='Call Macro' cmdcolor='1975743' cmdcolor_sec='1975743' macro='Write_DAC' >
+							<argument exp='audioSignal' />
+						</command>
+						<command class_type='output' title='Output' disable='1' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='1' exp='0' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Timer2_Interrupt' description='LFO' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='output' title='Output' disable='1' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='2' exp='1' />
+						<command class_type='native' title='C Code' ccode='/*
+  Enter C code below this comment
+*/
+
+FCV_LUT_INDEX = (FCV_LUT_INDEX+FCV_LUTOFFSET)%FCV_SIZEOFLUT;' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='lutVal = lut1 :: GetInt (LUT_index)' />
+						</command>
+						<command class_type='decision' title='0.25Hz for chorus.' cmdcolor='3568629' cmdcolor_sec='3568629' exp='noiseCounter == 3' swap='0' >
+							<flowline >
+								<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+									<exp exp='noiseCounter = noiseCounter + 0' />
+								</command>
+								<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+									<exp exp='chorusLutTargetVal = lutFilteredNoise :: GetInt (chorusLUTIndex)' />
+								</command>
+								<command class_type='native' title='Index Increment' ccode='FCV_CHORUSLUTINDEX = (FCV_CHORUSLUTINDEX+1)%FCV_SIZEOFLUT;' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+							</flowline>
+							<flowline >
+								<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+									<exp exp='noiseCounter = noiseCounter + 1' />
+								</command>
+							</flowline>
+						</command>
+						<command class_type='output' title='Output' disable='1' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='2' exp='0' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='timer3_interrupt' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='output' title='Output' disable='1' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='4' exp='1' />
+						<command class_type='native' title='C Code' textarea='36,175,36,175' ccode='/*
+  Enter C code below this comment
+*/
+
+if (FCV_ISFX0)
+{
+//tremolo and vibrato
+    FCV_VOLTAGEADC = FCD_03521_pot_color_cap1__RawSampleInt();
+	FCV_VOLTAGEADC = FCV_VOLTAGEADC &gt;&gt; 8;
+	FCV_VOLTAGEADC = FCV_VOLTAGEADC + 1;
+	if (FCV_VOLTAGEDISPLAY != FCV_VOLTAGEADC)
+	{
+		FCV_VOLTAGEDISPLAY = FCV_VOLTAGEADC;
+		FCD_0ad31_lcd_eb005__ClearLine(1);
+        FCD_0ad31_lcd_eb005__PrintString(&quot;Freq.(Hz)&quot;, 16);
+        FCD_0ad31_lcd_eb005__Cursor(10, 20);
+		FCD_0ad31_lcd_eb005__PrintFormattedNumber(FCV_VOLTAGEDISPLAY, 1);
+		FCV_LUTOFFSET = FCV_VOLTAGEADC;
+	}
+}
+
+else if (FCV_ISFX1)
+{
+    if (FCV_FX1COUNTER == 1) //flanger
+    {
+		FCV_VOLTAGEADC = FCD_03521_pot_color_cap1__RawSampleInt();
+		FCV_VOLTAGEADC = FCV_VOLTAGEADC &gt;&gt; 8;
+		FCV_VOLTAGEADC = FCV_VOLTAGEADC + 1;
+		if (FCV_VOLTAGEDISPLAY != FCV_VOLTAGEADC)
+		{
+			FCV_VOLTAGEDISPLAY = FCV_VOLTAGEADC;
+			FCD_0ad31_lcd_eb005__ClearLine(1);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Freq.(Hz)&quot;, 16);
+            FCD_0ad31_lcd_eb005__Cursor(10, 20);
+	    	FCD_0ad31_lcd_eb005__PrintFormattedNumber(FCV_VOLTAGEDISPLAY, 1);
+			FCV_LUTOFFSET = FCV_VOLTAGEADC;
+		}
+    }
+}
+//else if (FCV_ISFX2)
+//{
+// do nothing here. bypassed.
+//}
+else if (FCV_ISFX3)
+{
+    if (FCV_FX3COUNTER == 0) //bitCrusher
+    {
+		FCV_BITCRUSHERADC = FCD_03521_pot_color_cap1__RawSampleInt();
+		FCV_BITCRUSHERADC = FCV_BITCRUSHERADC &gt;&gt; 4;
+		FCV_BITCRUSHERADC = FCV_BITCRUSHERADC + 2;
+		if (FCV_VOLTAGEDISPLAY != FCV_BITCRUSHERADC)
+		{
+			FCV_VOLTAGEDISPLAY = FCV_BITCRUSHERADC;
+			FCD_0ad31_lcd_eb005__ClearLine(1);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Skip at:&quot;, 16);
+            FCD_0ad31_lcd_eb005__Cursor(10, 20);
+			FCD_0ad31_lcd_eb005__PrintFormattedNumber(FCV_VOLTAGEDISPLAY, 1);
+		}
+    }
+
+}
+else if (FCV_ISFX4)
+{
+	FCV_WAHADC = FCD_03521_pot_color_cap1__RawSampleInt();
+	FCV_WAHADC = FCV_WAHADC &gt;&gt; 1;
+	FCV_WAHADC = FCV_WAHADC &lt;&lt; 1; //reduce resolution
+	FCV_WAHADC = FCV_WAHADC + 300; // set low bound
+
+	if (FCV_VOLTAGEDISPLAY != FCV_WAHADC)
+	{
+		FCV_VOLTAGEDISPLAY = FCV_WAHADC;
+		FCD_0ad31_lcd_eb005__ClearLine(1);
+        FCD_0ad31_lcd_eb005__PrintString(&quot;Freq.(Hz)&quot;, 16);
+        FCD_0ad31_lcd_eb005__Cursor(10, 20);
+		FCD_0ad31_lcd_eb005__PrintNumber(FCV_VOLTAGEDISPLAY);
+        
+        FCV_WAHFC = flt_mul(2, sin(flt_div(flt_mul(3.1416, flt_fromi(FCV_WAHADC)), 24000)));
+        FCV_WAHQ = flt_div(1.0, flt_fromi(FCV_WAHQDAMPERINT));
+        FCV_WAHLITTLEQ = flt_sub(1, (flt_mul(FCV_WAHFC, FCV_WAHQ)));
+        FCV_WAHNORM = float32_sqrt(FCV_WAHQ);
+        FCV_WAHB_FLOAT[0] = flt_mul(FCV_WAHFC, FCV_WAHNORM);
+        FCV_WAHB_FLOAT[1] = FCV_WAHB_FLOAT[0];
+        FCV_WAHA_FLOAT[0] = flt_sub(flt_sub((flt_mul(FCV_WAHFC, FCV_WAHFC)), FCV_WAHLITTLEQ), 1);
+        FCV_WAHA_FLOAT[1] = FCV_WAHLITTLEQ;
+        FCV_WAHXFIXED[0] = flt_toi(flt_mul(FCV_WAHB_FLOAT[0], 8192));
+        FCV_WAHXFIXED[1] = FCV_WAHXFIXED[0];
+        FCV_WAHXFIXED[2] = flt_toi(flt_mul(FCV_WAHA_FLOAT[0], 8192));
+        FCV_WAHXFIXED[3] = flt_toi(flt_mul(FCV_WAHA_FLOAT[1], 8192));
+    }
+}' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='output' title='Output' disable='1' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='4' exp='0' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='ButtonInterrupt' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='output' title='Output' disable='1' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='1' exp='1' />
+						<command class_type='call' title='Call Macro' cmdcolor='1975743' cmdcolor_sec='1975743' macro='buttonReadIn' />
+						<command class_type='native' title='bank selection' textarea='66,-13,66,-13' ccode='// effect bank and selection
+if (FCV_ISB0DOWN &amp;&amp; !FCV_FXBANKSWITCHSTATE)
+{
+    FCV_FXBANKSWITCHSTATE = 1;
+    FCV_PARAMCOUNTER  = 0;
+
+    if (!FCV_ISFX0)
+    {
+        FCV_ISFX0 = 1;
+
+        FCV_ISFX1 = 0;
+        FCV_ISFX2 = 0;
+        FCV_ISFX3 = 0;
+        FCV_ISFX4 = 0;
+    }
+    else
+    {
+         FCV_FX0COUNTER = (FCV_FX0COUNTER + 1) % 2;
+    }
+
+
+    FCD_0ad31_lcd_eb005__ClearLine(1);
+    switch (FCV_FX0COUNTER)
+    {
+        case 0:
+            FCD_0ad31_lcd_eb005__ClearLine(0);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Tremolo&quot;, 16);
+            FCD_0ad31_lcd_eb005__ClearLine(1);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Depth (%)&quot;, 16);
+            FCD_0ad31_lcd_eb005__Cursor(10, 20);
+            FCD_0ad31_lcd_eb005__PrintNumber(FCV_WETDRYDISPLAY);
+            FCV_PARAMNUMBER = 1;
+        break;
+
+        case 1:
+            FCD_0ad31_lcd_eb005__ClearLine(0);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Vibrato&quot;, 16);
+            FCD_0ad31_lcd_eb005__ClearLine(1);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Depth (%)&quot;, 16);
+            FCD_0ad31_lcd_eb005__Cursor(10, 20);
+            FCD_0ad31_lcd_eb005__PrintNumber(FCV_VIBRATODEPTHDISPLAY);
+            FCV_PARAMNUMBER = 1;
+        break;
+    }
+}
+
+else if (FCV_ISB1DOWN &amp;&amp; !FCV_FXBANKSWITCHSTATE)
+{
+    FCV_FXBANKSWITCHSTATE = 1;
+    FCV_PARAMCOUNTER  = 0;
+
+    if(!FCV_ISFX1)
+    {
+        FCV_ISFX1 = 1;
+
+        FCV_ISFX0 = 0;
+        FCV_ISFX2 = 0;
+        FCV_ISFX3 = 0;
+        FCV_ISFX4 = 0;
+    }
+    else
+    {
+         FCV_FX1COUNTER = (FCV_FX1COUNTER + 1) % 2;
+    }
+
+
+
+    switch (FCV_FX1COUNTER)
+    {
+        case 0:
+            FCD_0ad31_lcd_eb005__ClearLine(0);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Chorus&quot;, 16);
+            FCD_0ad31_lcd_eb005__ClearLine(1);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Voices:&quot;, 16);
+            FCD_0ad31_lcd_eb005__Cursor(10, 20);
+            FCD_0ad31_lcd_eb005__PrintNumber(FCV_CHORUSNUMVOICES);
+
+            FCV_PARAMNUMBER = 2;
+        break;
+
+        case 1:
+            FCD_0ad31_lcd_eb005__ClearLine(0);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Flanger&quot;, 16);
+            FCD_0ad31_lcd_eb005__ClearLine(1);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Depth (%)&quot;, 16);
+            FCD_0ad31_lcd_eb005__Cursor(10, 20);
+            FCD_0ad31_lcd_eb005__PrintNumber(FCV_WETDRYDISPLAY);
+            FCV_PARAMNUMBER = 1;
+        break;
+    }
+}
+
+else if (FCV_ISB2DOWN &amp;&amp; !FCV_FXBANKSWITCHSTATE &amp;&amp; !FCV_ISFX2)
+{
+    FCV_FXBANKSWITCHSTATE = 1;
+    FCV_PARAMCOUNTER  = 0;
+
+    if(!FCV_ISFX2)
+    {
+        FCV_ISFX2 = 1;
+
+        FCV_ISFX0 = 0;
+        FCV_ISFX1 = 0;
+        FCV_ISFX3 = 0;
+        FCV_ISFX4 = 0;
+    }
+    FCD_0ad31_lcd_eb005__ClearLine(0);
+    FCD_0ad31_lcd_eb005__PrintString(&quot;Bypass&quot;, 16);
+    FCD_0ad31_lcd_eb005__ClearLine(1);
+    FCV_PARAMNUMBER = 1;
+}
+
+else if (FCV_ISB3DOWN &amp;&amp; !FCV_FXBANKSWITCHSTATE)
+{
+    FCV_FXBANKSWITCHSTATE = 1;
+    FCV_PARAMCOUNTER  = 0;
+
+    if(!FCV_ISFX3)
+    {
+        FCV_ISFX3 = 1;
+
+        FCV_ISFX0 = 0;
+        FCV_ISFX1 = 0;
+        FCV_ISFX2 = 0;
+        FCV_ISFX4 = 0;
+    }
+    else
+    {
+         FCV_FX3COUNTER = (FCV_FX3COUNTER + 1) % 2;
+    }
+
+    switch (FCV_FX3COUNTER)
+    {
+        case 0:
+            FCD_0ad31_lcd_eb005__ClearLine(0);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Bit Crusher&quot;, 16);
+            FCD_0ad31_lcd_eb005__ClearLine(1);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Resl.&quot;, 16);
+            FCD_0ad31_lcd_eb005__Cursor(10, 20);
+            FCD_0ad31_lcd_eb005__PrintNumber(FCV_BITCRUSHERRESOLUTION);
+            FCV_PARAMNUMBER = 1;
+        break;
+
+        case 1:
+            FCD_0ad31_lcd_eb005__ClearLine(0);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Distortion&quot;, 16);
+            FCD_0ad31_lcd_eb005__ClearLine(1);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Gain&quot;, 16);
+            FCD_0ad31_lcd_eb005__Cursor(10, 20);
+            FCD_0ad31_lcd_eb005__PrintNumber(FCV_DISTORTIONGAINDISPLAY);
+            FCV_PARAMNUMBER = 3;
+        break;
+    }
+}
+else if (FCV_ISB4DOWN &amp;&amp; !FCV_FXBANKSWITCHSTATE &amp;&amp; !FCV_ISFX4)
+{
+    FCV_FXBANKSWITCHSTATE = 1;
+    FCV_PARAMCOUNTER  = 0;
+    
+    if(!FCV_ISFX4)
+    {
+        FCV_ISFX4 = 1;
+
+        FCV_ISFX0 = 0;
+        FCV_ISFX1 = 0;
+        FCV_ISFX2 = 0;
+        FCV_ISFX3 = 0;
+    }
+
+    FCD_0ad31_lcd_eb005__ClearLine(0);
+    FCD_0ad31_lcd_eb005__PrintString(&quot;Wah Wah&quot;, 16);
+    FCD_0ad31_lcd_eb005__ClearLine(1);
+    FCD_0ad31_lcd_eb005__PrintString(&quot;Q&quot;, 16);
+    FCD_0ad31_lcd_eb005__Cursor(10, 20);
+    FCD_0ad31_lcd_eb005__PrintNumber(FCV_WAHQDAMPERINT);
+    FCV_PARAMNUMBER = 2;
+}' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='native' title='C Code' ccode='//parameter change
+if(FCV_ISB5DOWN &amp;&amp; !FCV_B5SWITCHSTATE)
+{
+    FCV_B5SWITCHSTATE = 1;
+    FCV_PARAMCOUNTER = (FCV_PARAMCOUNTER + 1) % FCV_PARAMNUMBER;
+
+    if (FCV_ISFX0)
+    {
+        if (FCV_FX0COUNTER == 1) //vibrato
+        {
+            FCD_0ad31_lcd_eb005__ClearLine(1);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Depth (%)&quot;, 16);
+            FCD_0ad31_lcd_eb005__Cursor(10, 20);
+            FCD_0ad31_lcd_eb005__PrintNumber(FCV_VIBRATODEPTHDISPLAY);
+        }
+        else //for when trem
+        {
+            FCD_0ad31_lcd_eb005__ClearLine(1);
+            FCD_0ad31_lcd_eb005__PrintString(&quot;Depth (%)&quot;, 16);
+            FCD_0ad31_lcd_eb005__Cursor(10, 20);
+            FCD_0ad31_lcd_eb005__PrintNumber(FCV_WETDRYDISPLAY);
+        }
+    }
+    else if (FCV_ISFX1)
+    {
+        switch (FCV_FX1COUNTER)
+        {
+            case 0:
+            //chorus
+                switch (FCV_PARAMCOUNTER)
+                {
+                    case 0: //number voices
+                        FCD_0ad31_lcd_eb005__ClearLine(1);
+                        FCD_0ad31_lcd_eb005__PrintString(&quot;Voices:&quot;, 16);
+                        FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                        FCD_0ad31_lcd_eb005__PrintNumber(FCV_CHORUSNUMVOICES);
+                    break;
+
+                    case 1: //wet dry
+                        FCD_0ad31_lcd_eb005__ClearLine(1);
+                        FCD_0ad31_lcd_eb005__PrintString(&quot;Depth (%)&quot;, 16);
+                        FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                        FCD_0ad31_lcd_eb005__PrintNumber(FCV_WETDRYDISPLAY);
+                    break;
+                }
+            break;
+            case 1: //flanger
+                FCD_0ad31_lcd_eb005__ClearLine(1);
+                FCD_0ad31_lcd_eb005__PrintString(&quot;Depth (%)&quot;, 16);
+                FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                FCD_0ad31_lcd_eb005__PrintNumber(FCV_FLANGERDEPTHDISPLAY);
+            break;
+        }
+    }
+    //skip FX2 (this is bypass)
+    else if (FCV_ISFX3)
+    {
+        if (FCV_FX3COUNTER == 1) // only change params on bitcrusher
+        {
+            switch (FCV_PARAMCOUNTER)
+            {
+                case 0: //number voices
+                    FCD_0ad31_lcd_eb005__ClearLine(1);
+                    FCD_0ad31_lcd_eb005__PrintString(&quot;Gain&quot;, 16);
+                    FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                    FCD_0ad31_lcd_eb005__PrintNumber(FCV_DISTORTIONGAINDISPLAY);
+                break;
+
+                case 1: //wet dry
+                    FCD_0ad31_lcd_eb005__ClearLine(1);
+                    FCD_0ad31_lcd_eb005__PrintString(&quot;Bias %&quot;, 16);
+                    FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                    FCD_0ad31_lcd_eb005__PrintNumber(FCV_DISTORTIONBIASDISPLAY);
+                break;
+           
+                case 2: //wet dry
+                    FCD_0ad31_lcd_eb005__ClearLine(1);
+                    FCD_0ad31_lcd_eb005__PrintString(&quot;Power %&quot;, 16);
+                    FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                    FCD_0ad31_lcd_eb005__PrintNumber(FCV_DISTORTIONRAILSDISPLAY);
+                break;
+            }
+        }
+        else //for when bitcrusher
+        {
+                FCD_0ad31_lcd_eb005__ClearLine(1);
+                FCD_0ad31_lcd_eb005__PrintString(&quot;Resl.&quot;, 16);
+                FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                FCD_0ad31_lcd_eb005__PrintNumber(FCV_BITCRUSHERRESOLUTION);
+        }
+    }
+    else if (FCV_ISFX4)
+    {
+        FCD_0ad31_lcd_eb005__ClearLine(1);
+        FCD_0ad31_lcd_eb005__PrintString(&quot;Q&quot;, 16);
+        FCD_0ad31_lcd_eb005__Cursor(10, 20);
+        FCD_0ad31_lcd_eb005__PrintNumber(FCV_WAHQDAMPERINT);
+    }
+}    ' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='native' title='C Code' textarea='36,3,36,3' ccode='// increment and decrement
+if (FCV_ISB6DOWN &amp;&amp; !FCV_UPDOWNSWITCHSTATE) //INCREMENT
+{
+    FCV_UPDOWNSWITCHSTATE = 1;
+    if (FCV_ISFX0)
+    {
+        switch (FCV_FX0COUNTER)
+        {
+            case 0:
+                //tremolo
+                //wet dry
+                if (FCV_WETDRY &lt; 32760)
+                {
+                    FCV_WETDRY = FCV_WETDRY + 1638;
+                    FCV_WETDRYDISPLAY = FCV_WETDRYDISPLAY + 5;
+                }
+            break;
+            case 1: //vibrato
+                if (FCV_VIBRATODEPTH &gt; 100)
+                    {
+                        FCV_VIBRATODEPTH = FCV_VIBRATODEPTH - 500;
+                        FCV_VIBRATODEPTHDISPLAY = FCV_VIBRATODEPTHDISPLAY + 5;
+                    }
+            break;
+        }
+    }
+    else if (FCV_ISFX1)
+    {
+        switch (FCV_FX1COUNTER)
+        {
+            case 0:
+                //chorus
+                switch (FCV_PARAMCOUNTER)
+                {
+                    case 0: //number voices
+                        if (FCV_CHORUSNUMVOICES &lt; 4)
+                        {
+                            FCV_CHORUSNUMVOICES++;
+                        }
+                    break;
+                    case 1: //wet dry
+                        if (FCV_WETDRY &lt; 32760)
+                        {
+                            FCV_WETDRY = FCV_WETDRY + 1638;
+                            FCV_WETDRYDISPLAY = FCV_WETDRYDISPLAY + 5;
+                        }
+                    break;
+                }
+            break;
+            case 1:
+                //flanger
+                if (FCV_FLANGERDEPTH &gt; 100)
+                    {
+                        FCV_FLANGERDEPTH = FCV_FLANGERDEPTH - 500;
+                        FCV_FLANGERDEPTHDISPLAY = FCV_FLANGERDEPTHDISPLAY + 5;
+                    }
+            break;
+        }
+    }
+    //else if (FCV_ISFX2)
+    //{
+    //do nothing. bypass
+    //}
+    else if (FCV_ISFX3)
+    {
+        switch (FCV_FX3COUNTER)
+        {
+            case 0: //bitcrusher
+            if (FCV_BITCRUSHERRESOLUTION &lt; 16)
+            {
+                FCV_BITCRUSHERRESOLUTION++;
+            }
+            break;
+            case 1: //distortion
+                switch (FCV_PARAMCOUNTER)
+                {
+                    case 0: //gain
+                        if(FCV_DISTORTIONGAIN &lt; 65000)
+                        {
+                             FCV_DISTORTIONGAIN = FCV_DISTORTIONGAIN + 200;
+                             FCV_DISTORTIONGAINDISPLAY = FCV_DISTORTIONGAIN;
+                             FCV_DISTORTIONGAINDISPLAY = FCV_DISTORTIONGAINDISPLAY/100;
+                        }
+                    break;
+                    case 1: //bias
+                        if(FCV_DISTORTIONBIAS &lt; 32760)
+                        {
+                            FCV_DISTORTIONBIAS = FCV_DISTORTIONBIAS + 1638;
+                            FCV_DISTORTIONBIASDISPLAY = FCV_DISTORTIONBIASDISPLAY + 5;
+                        }
+                    break;
+                    case 2: //rails
+                        if(FCV_DISTORTIONRAILS &lt; 32760)
+                        {
+                            FCV_DISTORTIONRAILS = FCV_DISTORTIONRAILS + 1638;
+                            FCV_DISTORTIONRAILSDISPLAY = FCV_DISTORTIONRAILSDISPLAY + 5;
+                        }
+                    break;
+                }
+            break;
+        }
+    }
+    else if (FCV_ISFX4)
+    {
+        if (FCV_WAHQDAMPERINT &lt; 60)
+        {
+            FCV_WAHQDAMPERINT++;
+
+            // recalculate coeffs
+            FCV_WAHFC = flt_mul(2, sin(flt_div(flt_mul(3.1416, flt_fromi(FCV_WAHADC)), 24000)));
+            FCV_WAHQ = flt_div(1.0, flt_fromi(FCV_WAHQDAMPERINT));
+            FCV_WAHLITTLEQ = flt_sub(1, (flt_mul(FCV_WAHFC, FCV_WAHQ)));
+            FCV_WAHNORM = float32_sqrt(FCV_WAHQ);
+            FCV_WAHB_FLOAT[0] = flt_mul(FCV_WAHFC, FCV_WAHNORM);
+            FCV_WAHB_FLOAT[1] = FCV_WAHB_FLOAT[0];
+            FCV_WAHA_FLOAT[0] = flt_sub(flt_sub((flt_mul(FCV_WAHFC, FCV_WAHFC)), FCV_WAHLITTLEQ), 1);
+            FCV_WAHA_FLOAT[1] = FCV_WAHLITTLEQ;
+            FCV_WAHXFIXED[0] = flt_toi(flt_mul(FCV_WAHB_FLOAT[0], 8192));
+            FCV_WAHXFIXED[1] = FCV_WAHXFIXED[0];
+            FCV_WAHXFIXED[2] = flt_toi(flt_mul(FCV_WAHA_FLOAT[0], 8192));
+            FCV_WAHXFIXED[3] = flt_toi(flt_mul(FCV_WAHA_FLOAT[1], 8192));
+        }
+    }
+}
+//DECREMENT
+else if (FCV_ISB7DOWN &amp;&amp; !FCV_UPDOWNSWITCHSTATE)
+{
+    FCV_UPDOWNSWITCHSTATE = 1;
+    if (FCV_ISFX0)
+    {
+        switch (FCV_FX0COUNTER)
+        {
+            case 0:
+                //tremolo
+                //wet dry
+                if (FCV_WETDRY &gt; 0)
+                {
+                    FCV_WETDRY = FCV_WETDRY - 1638;
+                    FCV_WETDRYDISPLAY = FCV_WETDRYDISPLAY - 5;
+                }
+            break;
+            case 1: //vibrato
+                if (FCV_VIBRATODEPTH &lt; 10100)
+                    {
+                        FCV_VIBRATODEPTH = FCV_VIBRATODEPTH + 500;
+                        FCV_VIBRATODEPTHDISPLAY = FCV_VIBRATODEPTHDISPLAY - 5;
+                    }
+            break;
+        }
+    }
+    else if (FCV_ISFX1)
+    {
+        switch (FCV_FX1COUNTER)
+        {
+            case 0:
+                //chorus
+                switch (FCV_PARAMCOUNTER)
+                {
+                    case 0: //number voices
+                        if (FCV_CHORUSNUMVOICES &gt; 1)
+                        {
+                            FCV_CHORUSNUMVOICES--;
+                        }
+                    break;
+                    case 1: //wet dry
+                        if (FCV_WETDRY &gt; 0)
+                        {
+                            FCV_WETDRY = FCV_WETDRY - 1638;
+                            FCV_WETDRYDISPLAY = FCV_WETDRYDISPLAY - 5;
+                        }
+                    break;
+                }
+            break;
+            case 1:
+                //flanger
+                if (FCV_FLANGERDEPTH &lt; 10100)
+                    {
+                        FCV_FLANGERDEPTH = FCV_FLANGERDEPTH + 500;
+                        FCV_FLANGERDEPTHDISPLAY = FCV_FLANGERDEPTHDISPLAY - 5;
+                    }
+            break;
+        }
+    }
+    else if (FCV_ISFX2)
+    {
+    }
+    //else if (FCV_ISFX3)
+    //{
+    //Do nothing, bypass.
+    //}
+    else if (FCV_ISFX3)
+    {
+        switch (FCV_FX3COUNTER)
+        {
+            case 0: //bitcrusher
+            if (FCV_BITCRUSHERRESOLUTION &gt; 1)
+            {
+                FCV_BITCRUSHERRESOLUTION--;
+            }
+            break;
+            case 1: //distortion
+                switch (FCV_PARAMCOUNTER)
+                {
+                    case 0: //gain
+                        if(FCV_DISTORTIONGAIN &gt;= 200)
+                        {
+                             FCV_DISTORTIONGAIN = FCV_DISTORTIONGAIN - 200;
+                             FCV_DISTORTIONGAINDISPLAY = FCV_DISTORTIONGAIN;
+                             FCV_DISTORTIONGAINDISPLAY = FCV_DISTORTIONGAINDISPLAY/100;
+                        }
+                    break;
+                    
+                    case 1: //bias
+                        if(FCV_DISTORTIONBIAS &gt; -32760)
+                        {
+                            FCV_DISTORTIONBIAS = FCV_DISTORTIONBIAS - 1638;
+                            FCV_DISTORTIONBIASDISPLAY = FCV_DISTORTIONBIASDISPLAY - 5;
+                        }
+                    break;
+                    
+                    case 2: //rails
+                        if(FCV_DISTORTIONRAILS &gt; 1638)
+                        {
+                            FCV_DISTORTIONRAILS = FCV_DISTORTIONRAILS - 1638;
+                            FCV_DISTORTIONRAILSDISPLAY = FCV_DISTORTIONRAILSDISPLAY - 5;
+                        }
+                    break;
+                }
+            break;
+        }
+    }
+    else if (FCV_ISFX4)
+    {
+        if (FCV_WAHQDAMPERINT &gt; 1)
+        {
+            FCV_WAHQDAMPERINT--;
+
+            // recalculate coeffs
+            FCV_WAHFC = flt_mul(2, sin(flt_div(flt_mul(3.1416, flt_fromi(FCV_WAHADC)), 24000)));
+            FCV_WAHQ = flt_div(1.0, flt_fromi(FCV_WAHQDAMPERINT));
+            FCV_WAHLITTLEQ = flt_sub(1, (flt_mul(FCV_WAHFC, FCV_WAHQ)));
+            FCV_WAHNORM = float32_sqrt(FCV_WAHQ);
+            FCV_WAHB_FLOAT[0] = flt_mul(FCV_WAHFC, FCV_WAHNORM);
+            FCV_WAHB_FLOAT[1] = FCV_WAHB_FLOAT[0];
+            FCV_WAHA_FLOAT[0] = flt_sub(flt_sub((flt_mul(FCV_WAHFC, FCV_WAHFC)), FCV_WAHLITTLEQ), 1);
+            FCV_WAHA_FLOAT[1] = FCV_WAHLITTLEQ;
+            FCV_WAHXFIXED[0] = flt_toi(flt_mul(FCV_WAHB_FLOAT[0], 8192));
+            FCV_WAHXFIXED[1] = FCV_WAHXFIXED[0];
+            FCV_WAHXFIXED[2] = flt_toi(flt_mul(FCV_WAHA_FLOAT[0], 8192));
+            FCV_WAHXFIXED[3] = flt_toi(flt_mul(FCV_WAHA_FLOAT[1], 8192));
+        }
+    }
+}
+
+
+
+
+//dispay update
+if ((FCV_ISB6DOWN || FCV_ISB7DOWN) &amp;&amp; FCV_UPDOWNSWITCHSTATE)
+{
+    FCD_0ad31_lcd_eb005__Cursor(0, 20);
+    FCD_0ad31_lcd_eb005__ClearLine(1);
+    FCD_0ad31_lcd_eb005__PrintFormattedNumber(FCV_PARAMCOUNTER, 1);
+
+    if (FCV_ISFX0)
+    {
+        switch (FCV_FX0COUNTER)
+        {
+            case 0:
+                //tremolo
+                FCD_0ad31_lcd_eb005__ClearLine(1);
+                FCD_0ad31_lcd_eb005__PrintString(&quot;Depth (%)&quot;, 16);
+                FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                FCD_0ad31_lcd_eb005__PrintNumber(FCV_WETDRYDISPLAY);
+            break;
+
+            case 1:
+            //vibrato
+                FCD_0ad31_lcd_eb005__ClearLine(1);
+                FCD_0ad31_lcd_eb005__PrintString(&quot;Depth (%)&quot;, 16);
+                FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                FCD_0ad31_lcd_eb005__PrintNumber(FCV_VIBRATODEPTHDISPLAY);
+            break;
+        }
+    }
+    else if (FCV_ISFX1)
+    {
+
+        switch (FCV_FX1COUNTER)
+        {
+            case 0:
+                switch (FCV_PARAMCOUNTER)
+                {
+                    case 0: //number voices
+                FCD_0ad31_lcd_eb005__ClearLine(1);
+                FCD_0ad31_lcd_eb005__PrintString(&quot;Voices:&quot;, 16);
+                FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                FCD_0ad31_lcd_eb005__PrintNumber(FCV_CHORUSNUMVOICES);
+                    break;
+
+                    case 1: //wet dry
+                FCD_0ad31_lcd_eb005__ClearLine(1);
+                FCD_0ad31_lcd_eb005__PrintString(&quot;Depth (%)&quot;, 16);
+                FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                FCD_0ad31_lcd_eb005__PrintNumber(FCV_WETDRYDISPLAY);
+                    break;
+                }
+            break;
+            case 1:
+            //flanger
+                FCD_0ad31_lcd_eb005__ClearLine(1);
+                FCD_0ad31_lcd_eb005__PrintString(&quot;Depth (%)&quot;, 16);
+                FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                FCD_0ad31_lcd_eb005__PrintNumber(FCV_FLANGERDEPTHDISPLAY);
+            break;
+        }
+    }
+    //skip FX2 (this is bypass)
+    else if (FCV_ISFX3)
+    {
+        switch (FCV_FX3COUNTER)
+        {
+            case 0:
+                FCD_0ad31_lcd_eb005__ClearLine(1);
+                FCD_0ad31_lcd_eb005__PrintString(&quot;Resl.&quot;, 16);
+                FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                FCD_0ad31_lcd_eb005__PrintNumber(FCV_BITCRUSHERRESOLUTION);
+            break;
+            case 1: //distortion
+                switch (FCV_PARAMCOUNTER)
+                {
+                    case 0: //number voices
+                FCD_0ad31_lcd_eb005__ClearLine(1);
+                FCD_0ad31_lcd_eb005__PrintString(&quot;Gain&quot;, 16);
+                FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                FCD_0ad31_lcd_eb005__PrintNumber(FCV_DISTORTIONGAINDISPLAY);
+                    break;
+
+                    case 1: //bias
+                FCD_0ad31_lcd_eb005__ClearLine(1);
+                FCD_0ad31_lcd_eb005__PrintString(&quot;Bias %&quot;, 16);
+                FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                FCD_0ad31_lcd_eb005__PrintNumber(FCV_DISTORTIONBIASDISPLAY);
+                    break;
+
+                    case 2: //rails
+                FCD_0ad31_lcd_eb005__ClearLine(1);
+                FCD_0ad31_lcd_eb005__PrintString(&quot;Power %&quot;, 16);
+                FCD_0ad31_lcd_eb005__Cursor(10, 20);
+                FCD_0ad31_lcd_eb005__PrintNumber(FCV_DISTORTIONRAILSDISPLAY);
+                    break;
+                }
+            break;
+        }
+    }
+    else if (FCV_ISFX4)
+    {
+        FCD_0ad31_lcd_eb005__ClearLine(1);
+        FCD_0ad31_lcd_eb005__PrintString(&quot;Q&quot;, 16);
+        FCD_0ad31_lcd_eb005__Cursor(10, 20);
+        FCD_0ad31_lcd_eb005__PrintNumber(FCV_WAHQDAMPERINT);
+    }
+}    ' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='native' title='C Code' ccode='//button state reset
+
+if (!FCV_ISB0DOWN &amp;&amp; !FCV_ISB1DOWN &amp;&amp; !FCV_ISB2DOWN &amp;&amp; !FCV_ISB3DOWN &amp;&amp; !FCV_ISB4DOWN &amp;&amp; FCV_FXBANKSWITCHSTATE)
+{
+    FCV_FXBANKSWITCHSTATE = 0;
+}
+
+if (!FCV_ISB5DOWN &amp;&amp; FCV_B5SWITCHSTATE)
+{
+    FCV_B5SWITCHSTATE = 0;
+}
+
+if (!FCV_ISB6DOWN &amp;&amp; !FCV_ISB7DOWN &amp;&amp; FCV_UPDOWNSWITCHSTATE)
+{
+    FCV_UPDOWNSWITCHSTATE = 0;
+}' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='output' title='Output' disable='1' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='1' exp='0' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='buttonReadIn' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='input' title='Input' cmdcolor='3610239' cmdcolor_sec='3610239' mode='1' port='1048577' mask='1' exp='isB0Down' />
+						<command class_type='input' title='Input' cmdcolor='3610239' cmdcolor_sec='3610239' mode='1' port='1048577' mask='2' exp='isB1Down' />
+						<command class_type='input' title='Input' cmdcolor='3610239' cmdcolor_sec='3610239' mode='1' port='1048577' mask='4' exp='isB2Down' />
+						<command class_type='input' title='Input' cmdcolor='3610239' cmdcolor_sec='3610239' mode='1' port='1048577' mask='8' exp='isB3Down' />
+						<command class_type='input' title='Input' cmdcolor='3610239' cmdcolor_sec='3610239' mode='1' port='1048577' mask='16' exp='isB4Down' />
+						<command class_type='input' title='Input' cmdcolor='3610239' cmdcolor_sec='3610239' mode='1' port='1048577' mask='32' exp='isB5Down' />
+						<command class_type='input' title='Input' cmdcolor='3610239' cmdcolor_sec='3610239' mode='1' port='1048577' mask='64' exp='isB6Down' />
+						<command class_type='input' title='Input' cmdcolor='3610239' cmdcolor_sec='3610239' mode='1' port='1048577' mask='128' exp='isB7Down' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Read_ADC' description='' >
+						<return name='Return' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='lower' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='mid' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='upper' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048581' mask='1' exp='0' />
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' ccode='// Call Component Macro
+// Call Component Macro: .upper=SPI_Master1::GetChar()
+FCL_UPPER = FCD_06c41_SPI_Master1__GetChar();
+' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='GetChar' >
+							<return exp='.upper' />
+						</command>
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='GetChar' >
+							<return exp='.mid' />
+						</command>
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='GetChar' >
+							<return exp='.lower' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048581' mask='1' exp='1' />
+						<command class_type='calculation' title='Calculation' textarea='36,0,511,300' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='.Return = .upper &lt;&lt; 12' />
+							<exp exp='.Return = .Return | (.mid &lt;&lt; 4)' />
+							<exp exp='.Return = .Return | (.lower &gt;&gt; 4)' />
+						</command>
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Write_DAC' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<param name='value' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='upper' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='lower' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<command class_type='calculation' title='Calculation' textarea='36,0,511,300' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='.upper = .value &gt;&gt; 8' />
+							<exp exp='.lower = .value' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048581' mask='2' exp='0' />
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='SendChar' >
+							<argument exp='0x00' />
+						</command>
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='SendChar' >
+							<argument exp='.upper' />
+						</command>
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='SendChar' >
+							<argument exp='.lower' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048581' mask='2' exp='1' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Main' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='pot_color_cap1' macro='RawEnable' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='Initialise' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='Start' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='Cursor' >
+							<argument exp='0' />
+							<argument exp='0' />
+						</command>
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='PrintString' >
+							<argument exp='&quot;BerwickFX&quot;' />
+						</command>
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='Cursor' >
+							<argument exp='0' />
+							<argument exp='20' />
+						</command>
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='PrintString' >
+							<argument exp='&quot;Bypassed&quot;' />
+						</command>
+						<command class_type='native' title='initialise' ccode='/*
+  Enter C code below this comment
+*/
+//initialise arrays
+
+//MUST BE LESS THAN MAXNUMSAMPLES
+FCV_CHORUSSAMPLEDELAYVOICE[0] = 297;
+FCV_CHORUSSAMPLEDELAYVOICE[1] = 478;
+FCV_CHORUSSAMPLEDELAYVOICE[2] = 325;
+FCV_CHORUSSAMPLEDELAYVOICE[3] = 503;' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='native' title='C Code' ccode='/*
+  Enter C code below this comment
+*/
+INTCON1bits.NSTDIS = 1;
+
+/* Make highest Priority */
+IPC0bits.T1IP0 = 1;
+IPC0bits.T1IP1 = 1;
+IPC0bits.T1IP2 = 1;
+
+/* Make Lowest Priority */
+IPC1bits.T2IP0 = 1;
+IPC1bits.T2IP1 = 1;
+IPC1bits.T2IP2 = 0;
+
+IPC1bits.T3IP0 = 1;
+IPC1bits.T3IP1 = 0;
+IPC1bits.T3IP2 = 1;
+
+IPC5bits.T4IP0 = 0;
+IPC5bits.T4IP1 = 0;
+IPC5bits.T4IP2 = 1;
+
+/*Enable Nesting */
+INTCON1bits.NSTDIS = 0;
+' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='wahFc = 2 * sin (3.1416 * wahADC / 24000)' />
+							<exp exp='wahQ = 1.0 / wahQDamperInt' />
+							<exp exp='wahLittleQ = 1 - (wahFc * wahQ)' />
+							<exp exp='wahNorm = sqrt (wahQ)' />
+							<exp exp='' />
+							<exp exp='wahB_float[0] = wahFc * wahNorm' />
+							<exp exp='wahB_float[1] = wahB_float[0]' />
+							<exp exp='wahA_float[0] = (wahFc * wahFc) - wahLittleQ - 1' />
+							<exp exp='wahA_float[1] = wahLittleQ' />
+							<exp exp='' />
+							<exp exp='wahXFixed[0] = float2int (wahB_float[0] * 8192)' />
+							<exp exp='wahXFixed[1] = wahXFixed[0]' />
+							<exp exp='wahXFixed[2] = float2int (wahA_float[0] * 8192)' />
+							<exp exp='wahXFixed[3] = float2int (wahA_float[1] * 8192)' />
+						</command>
+						<command class_type='interrupt' title='Interrupt' cmdcolor='3610239' cmdcolor_sec='3610239' enable='1' name='TMR1' call='Timer1_Interrupt' >
+							<settings timer='1' prescale='1' postscale='-1' rollover='1228' bitcount='-1' trigger='3' maskhi='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' masklo='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' >
+								<option value='0' />
+								<option value='0' />
+								<option value='1228' />
+								<option value='-1' />
+							</settings>
+						</command>
+						<command class_type='interrupt' title='Interrupt' cmdcolor='3610239' cmdcolor_sec='3610239' enable='1' name='TMR2' call='Timer2_Interrupt' >
+							<settings timer='1' prescale='8' postscale='-1' rollover='14740' bitcount='-1' trigger='3' maskhi='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' masklo='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' >
+								<option value='0' />
+								<option value='1' />
+								<option value='14740' />
+								<option value='-1' />
+							</settings>
+						</command>
+						<command class_type='interrupt' title='Interrupt' cmdcolor='3610239' cmdcolor_sec='3610239' enable='1' name='TMR3' call='timer3_interrupt' >
+							<settings timer='1' prescale='256' postscale='-1' rollover='23030' bitcount='-1' trigger='3' maskhi='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' masklo='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' >
+								<option value='0' />
+								<option value='3' />
+								<option value='23030' />
+								<option value='-1' />
+							</settings>
+						</command>
+						<command class_type='interrupt' title='Interrupt' cmdcolor='3610239' cmdcolor_sec='3610239' enable='1' name='TMR4' call='ButtonInterrupt' >
+							<settings timer='1' prescale='64' postscale='-1' rollover='46000' bitcount='-1' trigger='3' maskhi='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' masklo='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' >
+								<option value='0' />
+								<option value='2' />
+								<option value='46000' />
+								<option value='-1' />
+							</settings>
+						</command>
+						<command class_type='loop' title='Loop' cmdcolor='3568629' cmdcolor_sec='3568629' type='0' exp='1' >
+							<flowline />
+						</command>
+					</flowline>
+				</macro>
+			</macros>
+			<component class_type='ref' guid='917f243e-4102-4bee-9998-81f18bc6ca9d' vmin='2' vmaj='1' codename='DSPSystem1' x='-120' y='-50' z='0' xsz='32' ysz='32' zsz='5.1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='buffer_count' data='001' />
+					<value target='simple_mode' data='1' />
+					<value target='DSPsystem_ID' data='1' />
+					<value target='buff_a_name' data='Buffer A' />
+					<value target='buff_b_name' data='Buffer B' />
+					<value target='buff_c_name' data='Buffer C' />
+					<value target='buff_d_name' data='Buffer D' />
+					<value target='buff_e_name' data='Buffer E' />
+					<value target='buff_f_name' data='Buffer F' />
+					<value target='buff_g_name' data='Buffer G' />
+					<value target='buff_h_name' data='Buffer H' />
+					<value target='buff_a_depth' data='000' />
+					<value target='buff_a_sign' data='001' />
+					<value target='buff_a_size' data='1' />
+					<value target='buff_b_depth' data='000' />
+					<value target='buff_b_sign' data='001' />
+					<value target='buff_b_size' data='1' />
+					<value target='buff_c_depth' data='000' />
+					<value target='buff_c_sign' data='001' />
+					<value target='buff_c_size' data='1' />
+					<value target='buff_d_depth' data='000' />
+					<value target='buff_d_sign' data='001' />
+					<value target='buff_d_size' data='1' />
+					<value target='buff_e_depth' data='000' />
+					<value target='buff_e_sign' data='001' />
+					<value target='buff_e_size' data='1' />
+					<value target='buff_f_depth' data='000' />
+					<value target='buff_f_sign' data='001' />
+					<value target='buff_f_size' data='1' />
+					<value target='buff_g_depth' data='000' />
+					<value target='buff_g_sign' data='001' />
+					<value target='buff_g_size' data='1' />
+					<value target='buff_h_depth' data='000' />
+					<value target='buff_h_sign' data='001' />
+					<value target='buff_h_size' data='1' />
+					<value target='buff_simp_depth' data='000' />
+					<value target='buff_simp_sign' data='001' />
+					<value target='buff_simp_size' data='1' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='14683ea8-5a08-4b3a-be2d-3dea3e17e720' vmin='3' vmaj='1' codename='pot_color_cap1' x='-60' y='-110' z='0' xsz='25.1419' ysz='25.1419' zsz='18.45' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='1' >
+				<resources />
+				<properties />
+				<values >
+					<value target='angle_start' data='225.000000' />
+					<value target='angle_sweep' data='270.000000' />
+					<value target='cap_color' data='192' />
+					<value target='point_color' data='16777215' />
+					<value target='ScopeTraces' data='0' />
+					<value target='channel' data='9' />
+					<value target='vrefvol' data='500' />
+					<value target='vrefop' data='000' />
+					<value target='convspd' data='003' />
+					<value target='actime' data='40' />
+					<value target='bits' data='10' />
+					<value target='bitmul' data='0.004883' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='d29dda88-17de-4008-991a-c881890d4c57' vmin='1' vmaj='1' codename='lcd_eb005' x='-80' y='-10' z='6.125' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='Pin_Data_0' data='$PORTD.0' />
+					<value target='Pin_Data_1' data='$PORTD.1' />
+					<value target='Pin_Data_2' data='$PORTD.2' />
+					<value target='Pin_Data_3' data='$PORTD.3' />
+					<value target='Pin_RS' data='$PORTD.8' />
+					<value target='Pin_E' data='$PORTD.9' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='96862c4d-debc-45fa-9433-74711a4b9a3b' vmin='3' vmaj='1' codename='SPI_Master1' x='-120' y='-120' z='0' xsz='60' ysz='26' zsz='1.51' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='CHANNEL' data='001' />
+					<value target='PR_SCALE' data='002' />
+					<value target='CKP' data='000' />
+					<value target='CKE' data='000' />
+					<value target='SMP' data='000' />
+					<value target='MOSI' data='$PORTF.3' />
+					<value target='MISO' data='$PORTF.2' />
+					<value target='CLK' data='$PORTF.6' />
+					<value target='MosiRemap' data='' />
+					<value target='MisoRemap' data='' />
+					<value target='ClkRemap' data='' />
+					<value target='label' data='SPI  Master' />
+					<value target='ScopeTraces' data='0' />
+					<value target='ConsoleData' data='0' />
+					<value target='Injector' data='000' />
+					<value target='InjectorHandle' data='0' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='dfb4d07a-3d70-45d5-83ef-07e3c95d86ab' vmin='4' vmaj='1' codename='lut1' x='-60' y='-50' z='0' xsz='25' ysz='25' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='StorageType' data='001' />
+					<value target='Sign' data='001' />
+					<value target='intfixed' data='0,827,1653,2478,3302,4123,4942,5758,6570,7378,8181,8979,9771,10557,11337,12109,12873,13629,14377,15115,15844,16563,17271,17968,18654,19327,19989,20638,21273,21895,22503,23097,23676,24240,24789,25322,25838,26339,26822,27289,27738,28169,28582,28978,29354,29712,30052,30372,30672,30953,31215,31457,31678,31879,32061,32221,32361,32481,32580,32658,32715,32752,32767,32762,32736,32689,32621,32533,32424,32294,32143,31973,31781,31570,31338,31087,30815,30524,30214,29884,29536,29168,28782,28378,27956,27515,27058,26583,26091,25582,25057,24517,23960,23389,22802,22201,21586,20957,20315,19660,18992,18312,17621,16918,16205,15481,14747,14004,13252,12492,11724,10948,10165,9376,8581,7780,6975,6164,5351,4533,3713,2890,2066,1240,413,413,1240,2066,2890,3713,4533,5351,6164,6975,7780,8581,9376,10165,10948,11724,12492,13252,14004,14747,15481,16205,16918,17621,18312,18992,19660,20315,20957,21586,22201,22802,23389,23960,24517,25057,25582,26091,26583,27058,27515,27956,28378,28782,29168,29536,29884,30214,30524,30815,31087,31338,31570,31781,31973,32143,32294,32424,32533,32621,32689,32736,32762,32767,32752,32715,32658,32580,32481,32361,32221,32061,31879,31678,31457,31215,30953,30672,30372,30052,29712,29354,28978,28582,28169,27738,27289,26822,26339,25838,25322,24789,24240,23676,23097,22503,21895,21273,20638,19989,19327,18654,17968,17271,16563,15844,15115,14377,13629,12873,12109,11337,10557,9771,8979,8181,7378,6570,5758,4942,4123,3302,2478,1653,827,0
+' />
+					<value target='floatfixed' data='' />
+					<value target='fixedexp' data='0' />
+					<value target='EmbedIntoC' data='1' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='dfb4d07a-3d70-45d5-83ef-07e3c95d86ab' vmin='4' vmaj='1' codename='lutFilteredNoise' x='-58.3494' y='-80' z='0' xsz='25' ysz='25' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='StorageType' data='001' />
+					<value target='Sign' data='001' />
+					<value target='intfixed' data='0,1,4,6,8,10,11,13,14,14,14,13,13,13,13,13,15,16,17,18,19,19,19,19,19,18,17,15,14,13,13,13,13,13,12,11,11,13,14,14,15,14,14,13,13,13,14,15,15,16,17,19,20,21,21,21,22,22,23,22,22,21,20,19,17,16,14,13,11,9,8,6,3,1,-2,-6,-10,-13,-17,-20,-23,-25,-26,-28,-29,-29,-29,-30,-30,-31,-32,-33,-34,-34,-34,-35,-38,-40,-42,-44,-46,-48,-51,-52,-53,-55,-57,-60,-63,-64,-65,-67,-68,-70,-72,-74,-77,-80,-82,-85,-88,-90,-92,-94,-94,-95,-95,-97,-99,-100,-100,-99,-98,-98,-98,-96,-95,-95,-94,-94,-94,-93,-92,-90,-88,-86,-86,-85,-84,-82,-80,-79,-77,-75,-72,-69,-67,-66,-64,-63,-62,-61,-59,-57,-56,-55,-56,-57,-58,-58,-58,-56,-54,-52,-49,-46,-43,-40,-37,-34,-32,-30,-28,-26,-25,-24,-23,-21,-19,-16,-14,-12,-9,-7,-4,-2,0,2,3,5,5,6,7,6,6,6,7,8,10,13,16,18,20,22,23,24,26,28,30,32,33,35,36,37,38,40,42,44,46,49,53,55,58,61,64,68,72,75,78,79,79,78,77,76,74,74,74,75,75,75
+' />
+					<value target='floatfixed' data='' />
+					<value target='fixedexp' data='0' />
+					<value target='EmbedIntoC' data='1' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+		</component>
+	</components>
+	<keymap />
+	<panel2d shadows='0' lighting='0' brightness='0' perspective='0' >
+		<background rgb='9737364' img='' style='0' />
+		<camera xe='0' ye='0' ze='300' xt='0' yt='0' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+	</panel2d>
+	<panel3d shadows='0' lighting='0' brightness='0' perspective='0' >
+		<background rgb='8409120' img='' style='0' />
+		<table rgb='7360576' img='' style='0' size='25' />
+		<camera xe='-107.62' ye='-49.6608' ze='182.885' xt='-107.62' yt='-49.6608' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+		<camerakey0 xe='0' ye='0' ze='300' xt='0' yt='0' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+		<camerakey1 xe='-3.67394e-14' ye='0' ze='-300' xt='0' yt='0' zt='0' xquat='0' yquat='1' zquat='0' wquat='6.12323e-17' />
+		<camerakey2 xe='0' ye='-300' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.707107' yquat='0' zquat='0' wquat='0.707107' />
+		<camerakey3 xe='-3.67394e-14' ye='300' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-4.32978e-17' yquat='0.707107' zquat='0.707107' wquat='4.32978e-17' />
+		<camerakey4 xe='-300' ye='-6.66134e-14' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.5' yquat='0.5' zquat='0.5' wquat='0.5' />
+		<camerakey5 xe='300' ye='-6.66134e-14' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.5' yquat='-0.5' zquat='-0.5' wquat='0.5' />
+		<camerakey6 xe='-173.205' ye='-173.205' ze='173.205' xt='0' yt='0' zt='0' xquat='-0.424708' yquat='0.17592' zquat='0.339851' wquat='0.820473' />
+	</panel3d>
+	<layout >
+		<view type='0' name='ButtonInterrupt' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAHgCAAA' zoom='75' scrollx='0' scrolly='6244' flags='0' />
+		<view type='0' name='timer3_interrupt' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAHgCAAA' zoom='70' scrollx='0' scrolly='461' flags='0' />
+		<view type='0' name='Timer1_Interrupt' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAHgCAAA' zoom='75' scrollx='295' scrolly='2077' flags='0' />
+		<view type='0' name='Timer2_Interrupt' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAHgCAAA' zoom='70' scrollx='0' scrolly='105' flags='0' />
+		<view type='0' name='Main' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAHgCAAA' zoom='80' scrollx='0' scrolly='1080' flags='0' />
+		<view type='0' name='Write_DAC' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAHgCAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='buttonReadIn' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAHgCAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='Read_ADC' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAHgCAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+	</layout>
+</document>
+</root>

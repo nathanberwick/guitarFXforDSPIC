@@ -1,0 +1,410 @@
+<root>
+<document schema='101' license='1,University of Huddersfield,2R5ZZ8' title='' description='' target='PIC16.30F.30F4013' >
+	<config data='!0,8717!10,3f!20,87b3!30,7!40,c003%0,717%e,2%10,f%14,3%1f,0%20,3%24,3%27,1%2f,1%30,1%31,3%40,3%4e,1%4f,1' clkspd='117920000' simspd='3' usewdt='0' constif='0' />
+	<plugins >
+		<dll_dbg_icd enabled='0' >
+			<data name='debug' value='1' />
+			<data name='userpins' value='0' />
+			<data name='speed' value='1000' />
+			<data name='usev9' value='0' />
+			<data name='breaks' value='8' />
+			<data name='stacks' value='8' />
+			<data name='clkport' value='1' />
+			<data name='clkbit' value='6' />
+			<data name='dataport' value='1' />
+			<data name='databit' value='7' />
+			<data name='ghostype' value='0' />
+			<data name='monitor' value='1' />
+			<data name='ictloop' value='1' />
+			<data name='ictrate' value='1000' />
+			<data name='ictmask' value='-1' />
+			<data name='anlpres' value='19' />
+			<data name='digmask1' value='-1' />
+			<data name='digmask2' value='-1' />
+		</dll_dbg_icd>
+		<dll_models enabled='1' />
+		<dll_upgrader enabled='1' />
+		<dll_webhelp enabled='1' />
+	</plugins>
+	<supplement use='0' head='' body='' />
+	<debug />
+	<ghost >
+		<FK2 >
+			<data name='FK2D0' port='4294967295' pin='4294967295' />
+			<data name='FK2D1' port='4294967295' pin='4294967295' />
+			<data name='FK2D2' port='4294967295' pin='4294967295' />
+			<data name='FK2D3' port='4294967295' pin='4294967295' />
+			<data name='FK2D4' port='4294967295' pin='4294967295' />
+			<data name='FK2D5' port='4294967295' pin='4294967295' />
+			<data name='FK2D6' port='4294967295' pin='4294967295' />
+			<data name='FK2D7' port='4294967295' pin='4294967295' />
+			<data name='FK2D8' port='4294967295' pin='4294967295' />
+			<data name='FK2D9' port='4294967295' pin='4294967295' />
+			<data name='FK2D10' port='4294967295' pin='4294967295' />
+			<data name='FK2D11' port='4294967295' pin='4294967295' />
+			<data name='FK2D12' port='4294967295' pin='4294967295' />
+			<data name='FK2D13' port='4294967295' pin='4294967295' />
+			<data name='FK2D14' port='4294967295' pin='4294967295' />
+			<data name='FK2D15' port='4294967295' pin='4294967295' />
+			<data name='FK2A0' port='4294967295' pin='4294967295' />
+			<data name='FK2A1' port='4294967295' pin='4294967295' />
+			<data name='FK2A2' port='4294967295' pin='4294967295' />
+			<data name='FK2A3' port='4294967295' pin='4294967295' />
+			<data name='FK2A4' port='4294967295' pin='4294967295' />
+			<data name='FK2A5' port='4294967295' pin='4294967295' />
+		</FK2>
+		<ICD >
+			<data name='AnalogPrescaleValue' value='19' />
+			<data name='DigitalSampleRate' value='100000' />
+			<data name='BreakpointCount' value='8' />
+			<data name='CallStackDepthCount' value='8' />
+			<data name='ClockPort' value='1' />
+			<data name='ClockPin' value='6' />
+			<data name='DataPort' value='1' />
+			<data name='DataPin' value='7' />
+			<data name='UseDefaultPins' value='1' />
+			<data name='WrapEnabled' value='1' />
+			<data name='CommsDelayOverridden' value='0' />
+			<data name='CommsDelay' value='2' />
+			<data name='CalculatedCommsDelay' value='2' />
+		</ICD>
+		<pins >
+			<digital A='0' B='0' C='0' D='0' E='0' F='0' G='0' H='0' I='0' J='0' K='0' L='0' M='0' N='0' O='0' P='0' Q='0' R='0' S='0' T='0' U='0' V='0' W='0' X='0' Y='0' Z='0' />
+			<analog A='0' B='0' C='0' D='0' E='0' F='0' G='0' H='0' I='0' J='0' K='0' L='0' M='0' N='0' O='0' P='0' Q='0' R='0' S='0' T='0' U='0' V='0' W='0' X='0' Y='0' Z='0' />
+		</pins>
+	</ghost>
+	<components >
+		<settings autoimg='1' center='1' unitscale='0' fixedscale='0' fixedx='1' fixedy='1' fixedz='1' headcode='0' />
+		<definition guid='1c37ddd6-e5ad-4930-a367-13b18034e4db' vstate='40' vmin='0' vmaj='1' srcleaf='' visiblename='' description='' category='' catenable='1' author='' manuname='' manucode='' sysinfo='0' keywords='' dynamic='1' iconpath='' />
+		<component class_type='root' codename='panel' x='0' y='0' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+			<resources />
+			<properties >
+				<property name='Data' target='DSPFreqGen1::wave_data' typeid='10' hidden='0' locked='0' info='The raw waveform data' />
+			</properties>
+			<values >
+				<value target='DSPFreqGen1::wave_data' data='127,138,149,159,170,180,190,199,208,216,224,231,236,242,246,249,252,253,254,253,252,249,246,242,236,231,224,216,208,199,190,180,170,159,149,138,127,115,104,94,83,73,63,54,45,37,29,22,17,11,7,4,1,0,0,0,1,4,7,11,17,22,29,37,45,54,63,73,83,94,104,115' />
+			</values>
+			<events />
+			<apis />
+			<variables >
+				<variable public='0' >
+					<def class_type='variable' name='Voltage' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='FRAC' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='PeriodCount' type='u16' description='' isconst='0' isinit='1' usrinit='100' setinit='100' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='NextSinePoint' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='NextLUT_index' type='u8' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='false' type='b1' description='' isconst='1' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='FracOffset' type='f32' description='' isconst='0' isinit='1' usrinit='0.0' setinit='0.0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='SinePoint' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='FracValue' type='u16' description='48000 / 100 LUT' isconst='0' isinit='1' usrinit='480' setinit='480' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='SineData' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='SizeOfLUT' type='u16' description='' isconst='0' isinit='1' usrinit='100' setinit='100' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='FracIndex' type='f32' description='' isconst='0' isinit='1' usrinit='0.0' setinit='0.0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='FrequencyControl' type='f32' description='' isconst='0' isinit='0' usrinit='0.0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='SineCount' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='LUT_index' type='u8' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='true' type='b1' description='' isconst='1' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+			</variables>
+			<macros >
+				<macro >
+					<flowline name='Timer1_Interrupt' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='1' exp='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='SineData = SinePoint' />
+							<exp exp='' />
+						</command>
+						<command class_type='call' title='Call Macro' cmdcolor='1975743' cmdcolor_sec='1975743' macro='Write_DAC' >
+							<argument exp='SineData' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='1' exp='0' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Timer2_Interrupt' description='LFO' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='2' exp='1' />
+						<command class_type='native' title='C Code' ccode='/*
+  Enter C code below this comment
+*/
+FCV_LUT_INDEX = (FCV_LUT_INDEX+1)%FCV_SIZEOFLUT;' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='SinePoint = lut1 :: GetInt (LUT_index)' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='2' exp='0' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Write_DAC' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<param name='value' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='upper' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='lower' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<command class_type='calculation' title='Calculation' textarea='36,0,511,300' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='.upper = .value &gt;&gt; 8' />
+							<exp exp='.lower = .value' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048581' mask='2' exp='0' />
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='SendChar' >
+							<argument exp='0x00' />
+						</command>
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='SendChar' >
+							<argument exp='.upper' />
+						</command>
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='SendChar' >
+							<argument exp='.lower' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048581' mask='2' exp='1' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Main' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='Initialise' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='Start' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='PrintString' >
+							<argument exp='&quot;Function Gen&quot;' />
+						</command>
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='Cursor' >
+							<argument exp='0' />
+							<argument exp='20' />
+						</command>
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='PrintFormattedNumber' >
+							<argument exp='SizeOfLUT' />
+							<argument exp='1' />
+						</command>
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='LUT_index = 0' />
+						</command>
+						<command class_type='native' title='C Code' ccode='/*
+  Enter C code below this comment
+*/
+INTCON1bits.NSTDIS = 1;
+/* Make highest Priority */
+IPC0bits.T1IP0 = 1;
+IPC0bits.T1IP1 = 1;
+IPC0bits.T1IP2 = 1;
+
+/* Make Lowest Priority */
+
+IPC1bits.T2IP0 = 1;
+IPC1bits.T2IP1 = 0;
+IPC1bits.T2IP2 = 0;
+
+/*Enable Nesting */
+INTCON1bits.NSTDIS = 0;
+' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='interrupt' title='Interrupt' cmdcolor='3610239' cmdcolor_sec='3610239' enable='1' name='TMR1' call='Timer1_Interrupt' >
+							<settings timer='1' prescale='1' postscale='-1' rollover='614' bitcount='-1' trigger='3' maskhi='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' masklo='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' >
+								<option value='0' />
+								<option value='0' />
+								<option value='614' />
+								<option value='-1' />
+							</settings>
+						</command>
+						<command class_type='interrupt' title='Interrupt' cmdcolor='3610239' cmdcolor_sec='3610239' enable='1' name='TMR2' call='Timer2_Interrupt' >
+							<settings timer='1' prescale='1' postscale='-1' rollover='4914' bitcount='-1' trigger='3' maskhi='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' masklo='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' >
+								<option value='0' />
+								<option value='0' />
+								<option value='4914' />
+								<option value='-1' />
+							</settings>
+						</command>
+						<command class_type='native' title='C Code' ccode='/*
+  Enter C code below this comment
+*/
+' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='loop' title='Loop' cmdcolor='3568629' cmdcolor_sec='3568629' type='0' exp='1' >
+							<flowline >
+								<command class_type='delay' title='Delay' disable='1' cmdcolor='7895044' cmdcolor_sec='7895044' exp='1' type='1' />
+							</flowline>
+						</command>
+					</flowline>
+				</macro>
+			</macros>
+			<component class_type='ref' guid='917f243e-4102-4bee-9998-81f18bc6ca9d' vmin='2' vmaj='1' codename='DSPSystem1' x='-120' y='-50' z='0' xsz='32' ysz='32' zsz='5.1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='buffer_count' data='001' />
+					<value target='simple_mode' data='1' />
+					<value target='DSPsystem_ID' data='1' />
+					<value target='buff_a_name' data='Buffer A' />
+					<value target='buff_b_name' data='Buffer B' />
+					<value target='buff_c_name' data='Buffer C' />
+					<value target='buff_d_name' data='Buffer D' />
+					<value target='buff_e_name' data='Buffer E' />
+					<value target='buff_f_name' data='Buffer F' />
+					<value target='buff_g_name' data='Buffer G' />
+					<value target='buff_h_name' data='Buffer H' />
+					<value target='buff_a_depth' data='000' />
+					<value target='buff_a_sign' data='001' />
+					<value target='buff_a_size' data='1' />
+					<value target='buff_b_depth' data='000' />
+					<value target='buff_b_sign' data='001' />
+					<value target='buff_b_size' data='1' />
+					<value target='buff_c_depth' data='000' />
+					<value target='buff_c_sign' data='001' />
+					<value target='buff_c_size' data='1' />
+					<value target='buff_d_depth' data='000' />
+					<value target='buff_d_sign' data='001' />
+					<value target='buff_d_size' data='1' />
+					<value target='buff_e_depth' data='000' />
+					<value target='buff_e_sign' data='001' />
+					<value target='buff_e_size' data='1' />
+					<value target='buff_f_depth' data='000' />
+					<value target='buff_f_sign' data='001' />
+					<value target='buff_f_size' data='1' />
+					<value target='buff_g_depth' data='000' />
+					<value target='buff_g_sign' data='001' />
+					<value target='buff_g_size' data='1' />
+					<value target='buff_h_depth' data='000' />
+					<value target='buff_h_sign' data='001' />
+					<value target='buff_h_size' data='1' />
+					<value target='buff_simp_depth' data='000' />
+					<value target='buff_simp_sign' data='001' />
+					<value target='buff_simp_size' data='1' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='14683ea8-5a08-4b3a-be2d-3dea3e17e720' vmin='3' vmaj='1' codename='pot_color_cap1' x='-50' y='-100' z='0' xsz='25.1419' ysz='25.1419' zsz='18.45' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='1' >
+				<resources />
+				<properties />
+				<values >
+					<value target='angle_start' data='225.000000' />
+					<value target='angle_sweep' data='270.000000' />
+					<value target='cap_color' data='192' />
+					<value target='point_color' data='16777215' />
+					<value target='ScopeTraces' data='0' />
+					<value target='channel' data='9' />
+					<value target='vrefvol' data='500' />
+					<value target='vrefop' data='000' />
+					<value target='convspd' data='003' />
+					<value target='actime' data='40' />
+					<value target='bits' data='10' />
+					<value target='bitmul' data='0.004883' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='d29dda88-17de-4008-991a-c881890d4c57' vmin='1' vmaj='1' codename='lcd_eb005' x='-80' y='-10' z='6.125' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='Pin_Data_0' data='$PORTD.0' />
+					<value target='Pin_Data_1' data='$PORTD.1' />
+					<value target='Pin_Data_2' data='$PORTD.2' />
+					<value target='Pin_Data_3' data='$PORTD.3' />
+					<value target='Pin_RS' data='$PORTD.8' />
+					<value target='Pin_E' data='$PORTD.9' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='96862c4d-debc-45fa-9433-74711a4b9a3b' vmin='3' vmaj='1' codename='SPI_Master1' x='-120' y='-120' z='0' xsz='60' ysz='26' zsz='1.51' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='CHANNEL' data='001' />
+					<value target='PR_SCALE' data='002' />
+					<value target='CKP' data='000' />
+					<value target='CKE' data='000' />
+					<value target='SMP' data='000' />
+					<value target='MOSI' data='$PORTF.3' />
+					<value target='MISO' data='$PORTF.2' />
+					<value target='CLK' data='$PORTF.6' />
+					<value target='MosiRemap' data='' />
+					<value target='MisoRemap' data='' />
+					<value target='ClkRemap' data='' />
+					<value target='label' data='SPI  Master' />
+					<value target='ScopeTraces' data='0' />
+					<value target='ConsoleData' data='0' />
+					<value target='Injector' data='000' />
+					<value target='InjectorHandle' data='0' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='dfb4d07a-3d70-45d5-83ef-07e3c95d86ab' vmin='4' vmaj='1' codename='lut1' x='-60' y='-50' z='0' xsz='25' ysz='25' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='StorageType' data='001' />
+					<value target='Sign' data='000' />
+					<value target='intfixed' data='16384,17412,18437,19454,20458,21446,22415,23359,24277,25162,26014,26827,27599,28327,29008,29638,30217,30741,31208,31617,31966,32253,32477,32638,32735,32768,32735,32638,32477,32253,31966,31617,31208,30741,30217,29638,29008,28327,27599,26827,26014,25162,24277,23359,22415,21446,20458,19454,18437,17412,16384,15355,14330,13313,12309,11321,10352,9408,8490,7605,6753,5940,5168,4440,3759,3129,2550,2026,1559,1150,801,514,290,129,32,0,32,129,290,514,801,1150,1559,2026,2550,3129,3759,4440,5168,5940,6753,7605,8490,9408,10352,11321,12309,13313,14330,15355' />
+					<value target='floatfixed' data='' />
+					<value target='fixedexp' data='0' />
+					<value target='EmbedIntoC' data='1' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+		</component>
+	</components>
+	<keymap />
+	<panel2d shadows='0' lighting='0' brightness='0' perspective='0' >
+		<background rgb='9737364' img='' style='0' />
+		<camera xe='0' ye='0' ze='300' xt='0' yt='0' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+	</panel2d>
+	<panel3d shadows='0' lighting='0' brightness='0' perspective='0' >
+		<background rgb='8409120' img='' style='0' />
+		<table rgb='7360576' img='' style='0' size='25' />
+		<camera xe='-97.1874' ye='-63.329' ze='208.297' xt='-97.1874' yt='-63.329' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+		<camerakey0 xe='0' ye='0' ze='300' xt='0' yt='0' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+		<camerakey1 xe='-3.67394e-14' ye='0' ze='-300' xt='0' yt='0' zt='0' xquat='0' yquat='1' zquat='0' wquat='6.12323e-17' />
+		<camerakey2 xe='0' ye='-300' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.707107' yquat='0' zquat='0' wquat='0.707107' />
+		<camerakey3 xe='-3.67394e-14' ye='300' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-4.32978e-17' yquat='0.707107' zquat='0.707107' wquat='4.32978e-17' />
+		<camerakey4 xe='-300' ye='-6.66134e-14' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.5' yquat='0.5' zquat='0.5' wquat='0.5' />
+		<camerakey5 xe='300' ye='-6.66134e-14' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.5' yquat='-0.5' zquat='-0.5' wquat='0.5' />
+		<camerakey6 xe='-173.205' ye='-173.205' ze='173.205' xt='0' yt='0' zt='0' xquat='-0.424708' yquat='0.17592' zquat='0.339851' wquat='0.820473' />
+	</panel3d>
+	<layout >
+		<view type='0' name='Timer2_Interrupt' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAAsAMAABQCAAA' zoom='70' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='Main' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAAsAMAABQCAAA' zoom='40' scrollx='0' scrolly='55' flags='0' />
+		<view type='0' name='Timer1_Interrupt' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAAsAMAABQCAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='Write_DAC' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAAsAMAABQCAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+	</layout>
+</document>
+</root>

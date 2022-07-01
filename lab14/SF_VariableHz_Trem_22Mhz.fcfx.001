@@ -1,0 +1,511 @@
+<root>
+<document schema='101' license='1,University of Huddersfield,2R5ZZ8' title='SF_FreqGenLUT_60HzOsc_3rdInt' description='This system runs audio at 24000 sample rate, the sample rate of the audio is determined by the highest
+priority interrupt, Timer 1.
+
+If this is too high, the processing will get continualy interrupted resulting in system errors. You can
+see this interrupt on LED D0. The length this LED is on, is proportinal to the Timer 1 ISR.
+
+It&apos;s important to enable &apos;Interrupt Nesting&apos; NSTDIS = 0, to enable the interrupts to adopt priorities.
+
+Timer 2 - This controls the Lookup Table data fetch. The table will cycle at the Timer 2 rate / LUT size, in
+this case 6000 / 100 = 60Hz. This can be heard on the audio output. A sinewave is held in the LUT.
+
+Timer 3 - This is the lowest priority interrupt and controls when the Potentiometer is read.
+
+' target='PIC16.30F.30F4013' >
+	<config data='!0,8717!10,3f!20,87b3!30,7!40,c003%0,717%e,2%10,f%14,3%1f,0%20,3%24,3%27,1%2f,1%30,1%31,3%40,3%4e,1%4f,1' clkspd='117920000' simspd='3' usewdt='0' constif='0' />
+	<plugins >
+		<dll_dbg_icd enabled='0' >
+			<data name='debug' value='1' />
+			<data name='userpins' value='0' />
+			<data name='speed' value='1000' />
+			<data name='usev9' value='0' />
+			<data name='breaks' value='8' />
+			<data name='stacks' value='8' />
+			<data name='clkport' value='1' />
+			<data name='clkbit' value='6' />
+			<data name='dataport' value='1' />
+			<data name='databit' value='7' />
+			<data name='ghostype' value='0' />
+			<data name='monitor' value='1' />
+			<data name='ictloop' value='1' />
+			<data name='ictrate' value='1000' />
+			<data name='ictmask' value='-1' />
+			<data name='anlpres' value='19' />
+			<data name='digmask1' value='-1' />
+			<data name='digmask2' value='-1' />
+		</dll_dbg_icd>
+		<dll_models enabled='1' />
+		<dll_upgrader enabled='1' />
+		<dll_webhelp enabled='1' />
+	</plugins>
+	<supplement use='0' head='' body='' />
+	<debug />
+	<ghost >
+		<FK2 >
+			<data name='FK2D0' port='4294967295' pin='4294967295' />
+			<data name='FK2D1' port='4294967295' pin='4294967295' />
+			<data name='FK2D2' port='4294967295' pin='4294967295' />
+			<data name='FK2D3' port='4294967295' pin='4294967295' />
+			<data name='FK2D4' port='4294967295' pin='4294967295' />
+			<data name='FK2D5' port='4294967295' pin='4294967295' />
+			<data name='FK2D6' port='4294967295' pin='4294967295' />
+			<data name='FK2D7' port='4294967295' pin='4294967295' />
+			<data name='FK2D8' port='4294967295' pin='4294967295' />
+			<data name='FK2D9' port='4294967295' pin='4294967295' />
+			<data name='FK2D10' port='4294967295' pin='4294967295' />
+			<data name='FK2D11' port='4294967295' pin='4294967295' />
+			<data name='FK2D12' port='4294967295' pin='4294967295' />
+			<data name='FK2D13' port='4294967295' pin='4294967295' />
+			<data name='FK2D14' port='4294967295' pin='4294967295' />
+			<data name='FK2D15' port='4294967295' pin='4294967295' />
+			<data name='FK2A0' port='4294967295' pin='4294967295' />
+			<data name='FK2A1' port='4294967295' pin='4294967295' />
+			<data name='FK2A2' port='4294967295' pin='4294967295' />
+			<data name='FK2A3' port='4294967295' pin='4294967295' />
+			<data name='FK2A4' port='4294967295' pin='4294967295' />
+			<data name='FK2A5' port='4294967295' pin='4294967295' />
+		</FK2>
+		<ICD >
+			<data name='AnalogPrescaleValue' value='19' />
+			<data name='DigitalSampleRate' value='100000' />
+			<data name='BreakpointCount' value='8' />
+			<data name='CallStackDepthCount' value='8' />
+			<data name='ClockPort' value='1' />
+			<data name='ClockPin' value='6' />
+			<data name='DataPort' value='1' />
+			<data name='DataPin' value='7' />
+			<data name='UseDefaultPins' value='1' />
+			<data name='WrapEnabled' value='1' />
+			<data name='CommsDelayOverridden' value='0' />
+			<data name='CommsDelay' value='2' />
+			<data name='CalculatedCommsDelay' value='2' />
+		</ICD>
+		<pins >
+			<digital A='0' B='519' C='0' D='783' E='0' F='78' G='0' H='0' I='0' J='0' K='0' L='0' M='0' N='0' O='0' P='0' Q='0' R='0' S='0' T='0' U='0' V='0' W='0' X='0' Y='0' Z='0' />
+			<analog A='0' B='512' C='0' D='0' E='0' F='0' G='0' H='0' I='0' J='0' K='0' L='0' M='0' N='0' O='0' P='0' Q='0' R='0' S='0' T='0' U='0' V='0' W='0' X='0' Y='0' Z='0' />
+		</pins>
+	</ghost>
+	<components >
+		<settings autoimg='1' center='1' unitscale='0' fixedscale='0' fixedx='1' fixedy='1' fixedz='1' headcode='0' />
+		<definition guid='1c37ddd6-e5ad-4930-a367-13b18034e4db' vstate='40' vmin='0' vmaj='1' srcleaf='' visiblename='' description='' category='' catenable='1' author='' manuname='' manucode='' sysinfo='0' keywords='' dynamic='1' iconpath='' />
+		<component class_type='root' codename='panel' x='0' y='0' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+			<resources />
+			<properties >
+				<property name='Data' target='DSPFreqGen1::wave_data' typeid='10' hidden='0' locked='0' info='The raw waveform data' />
+			</properties>
+			<values >
+				<value target='DSPFreqGen1::wave_data' data='127,138,149,159,170,180,190,199,208,216,224,231,236,242,246,249,252,253,254,253,252,249,246,242,236,231,224,216,208,199,190,180,170,159,149,138,127,115,104,94,83,73,63,54,45,37,29,22,17,11,7,4,1,0,0,0,1,4,7,11,17,22,29,37,45,54,63,73,83,94,104,115' />
+			</values>
+			<events />
+			<apis />
+			<variables >
+				<variable public='0' >
+					<def class_type='variable' name='NextSinePoint' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='NextLUT_index' type='u8' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='voltageADCUI' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='VolumeDivider' type='u16' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='false' type='b1' description='' isconst='1' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='depthUP' type='b1' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='AudioSignal' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='LongInterimAudio' type='s32' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='SineData' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='SizeOfLUT' type='u16' description='' isconst='0' isinit='1' usrinit='101' setinit='101' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='InterimAudio' type='s16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='voltageDisplay' type='u16' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='depthDown' type='b1' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='IntTremValue' type='u32' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='SineCount' type='u16' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='LongSineData' type='u32' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='LUT_index' type='u8' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='depth' type='s16' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='VoltsDisplay' type='T8' description='' isconst='0' isinit='0' usrinit='&quot;&quot;' setinit='' >
+						<array size='20' />
+					</def>
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='true' type='b1' description='' isconst='1' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+			</variables>
+			<macros >
+				<macro >
+					<flowline name='Timer1_Interrupt' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='1' exp='1' />
+						<command class_type='call' title='Call Macro' cmdcolor='1975743' cmdcolor_sec='1975743' macro='Read_ADC' >
+							<return exp='AudioSignal' />
+						</command>
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='InterimAudio = AudioSignal - 32768' />
+						</command>
+						<command class_type='native' title='C Code' ccode='//Tremolo
+CORCONbits.IF = 0; //fractional mode
+volatile register int A asm(&quot;A&quot;);
+volatile register int B asm(&quot;B&quot;);
+asm(&quot;MOV.W _FCV_INTERIMAUDIO, W4&quot;);
+asm(&quot;MOV.W _FCV_INTTREMVALUE, W5&quot;);
+asm(&quot;MOV.W _FCV_DEPTH, W6&quot;);
+asm(&quot;MPY W5*W6, B&quot;);
+asm(&quot;SAC B, W7&quot;);
+asm(&quot;MPY W4*W7, A&quot;);
+FCV_INTERIMAUDIO = __builtin_ACCH(A);
+CORCONbits.IF = 1; //integer mode' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='SineData = InterimAudio + 32768' />
+						</command>
+						<command class_type='call' title='Call Macro' cmdcolor='1975743' cmdcolor_sec='1975743' macro='Write_DAC' >
+							<argument exp='SineData' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='1' exp='0' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Timer2_Interrupt' description='LFO' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='2' exp='1' />
+						<command class_type='native' title='C Code' ccode='/*
+  Enter C code below this comment
+*/
+FCV_LUT_INDEX = (FCV_LUT_INDEX+FCV_VOLUMEDIVIDER)%FCV_SIZEOFLUT;' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='IntTremValue = lut1 :: GetInt (LUT_index)' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='2' exp='0' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Timer3_Interrupt' description='Grab the control knob value!' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='4' exp='1' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='pot_color_cap1' macro='RawSampleInt' >
+							<return exp='VoltageADCUI' />
+						</command>
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='voltageADCUI = voltageADCUI &gt;&gt; 9' />
+							<exp exp='voltageADCUI = voltageADCUI + 1' />
+						</command>
+						<command class_type='decision' title='VoltageDisplay' cmdcolor='3568629' cmdcolor_sec='3568629' exp='VoltageDisplay != VoltageADCUI' swap='0' >
+							<flowline >
+								<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+									<exp exp='VoltageDisplay = VoltageADCUI' />
+								</command>
+								<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='Cursor' >
+									<argument exp='0' />
+									<argument exp='20' />
+								</command>
+								<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='ClearLine' >
+									<argument exp='1' />
+								</command>
+								<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='PrintNumber' >
+									<argument exp='voltageDisplay' />
+								</command>
+							</flowline>
+							<flowline />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048577' mask='4' exp='0' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Read_ADC' description='' >
+						<return name='Return' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='upper' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='mid' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='lower' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048581' mask='1' exp='0' />
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' ccode='// Call Component Macro
+// Call Component Macro: .upper=SPI_Master1::GetChar()
+FCL_UPPER = FCD_06c41_SPI_Master1__GetChar();
+' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='GetChar' >
+							<return exp='.upper' />
+						</command>
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='GetChar' >
+							<return exp='.mid' />
+						</command>
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='GetChar' >
+							<return exp='.lower' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048581' mask='1' exp='1' />
+						<command class_type='calculation' title='Calculation' textarea='36,0,511,300' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='.Return = .upper &lt;&lt; 12' />
+							<exp exp='.Return = .Return | (.mid &lt;&lt; 4)' />
+							<exp exp='.Return = .Return | (.lower &gt;&gt; 4)' />
+						</command>
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Write_DAC' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<param name='value' type='u16' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='upper' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<local name='lower' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<command class_type='calculation' title='Calculation' textarea='36,0,511,300' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='.upper = .value &gt;&gt; 8' />
+							<exp exp='.lower = .value' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048581' mask='2' exp='0' />
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='SendChar' >
+							<argument exp='0x00' />
+						</command>
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='SendChar' >
+							<argument exp='.upper' />
+						</command>
+						<command class_type='call' title='Call Component Macro' textarea='36,0,511,300' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='SendChar' >
+							<argument exp='.lower' />
+						</command>
+						<command class_type='output' title='Output' cmdcolor='7895044' cmdcolor_sec='7895044' mode='1' port='1048581' mask='2' exp='1' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Main' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='pot_color_cap1' macro='RawEnable' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='SPI_Master1' macro='Initialise' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='Start' />
+						<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='PrintString' >
+							<argument exp='&quot;Voltage ADC&quot;' />
+						</command>
+						<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+							<exp exp='LUT_index = 0' />
+						</command>
+						<command class_type='native' title='C Code' ccode='/*
+  Enter C code below this comment
+*/
+INTCON1bits.NSTDIS = 1;
+/* Make highest Priority */
+IPC0bits.T1IP0 = 1;
+IPC0bits.T1IP1 = 1;
+IPC0bits.T1IP2 = 1;
+
+/* Make Lowest Priority */
+
+IPC1bits.T2IP0 = 1;
+IPC1bits.T2IP1 = 1;
+IPC1bits.T2IP2 = 0;
+
+IPC1bits.T3IP0 = 1;
+IPC1bits.T3IP1 = 0;
+IPC1bits.T3IP2 = 0;
+
+/*Enable Nesting */
+INTCON1bits.NSTDIS = 0;
+' cmdcolor='3389439' cmdcolor_sec='3389439' language='C' />
+						<command class_type='interrupt' title='Interrupt' cmdcolor='3610239' cmdcolor_sec='3610239' enable='1' name='TMR1' call='Timer1_Interrupt' >
+							<settings timer='1' prescale='1' postscale='-1' rollover='614' bitcount='-1' trigger='3' maskhi='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' masklo='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' >
+								<option value='0' />
+								<option value='0' />
+								<option value='614' />
+								<option value='-1' />
+							</settings>
+						</command>
+						<command class_type='interrupt' title='Interrupt' cmdcolor='3610239' cmdcolor_sec='3610239' enable='1' name='TMR2' call='Timer2_Interrupt' >
+							<settings timer='1' prescale='64' postscale='-1' rollover='7400' bitcount='-1' trigger='3' maskhi='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' masklo='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' >
+								<option value='0' />
+								<option value='2' />
+								<option value='7400' />
+								<option value='-1' />
+							</settings>
+						</command>
+						<command class_type='interrupt' title='Interrupt' cmdcolor='3610239' cmdcolor_sec='3610239' enable='1' name='TMR3' call='Timer3_Interrupt' >
+							<settings timer='1' prescale='256' postscale='-1' rollover='10000' bitcount='-1' trigger='3' maskhi='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' masklo='--------------------------------------------------------------------------------------------------------------------------------------------------------------------------8' >
+								<option value='0' />
+								<option value='3' />
+								<option value='10000' />
+								<option value='-1' />
+							</settings>
+						</command>
+						<command class_type='loop' title='Loop' cmdcolor='3568629' cmdcolor_sec='3568629' type='0' exp='1' >
+							<flowline >
+								<command class_type='input' title='Input' cmdcolor='3610239' cmdcolor_sec='3610239' mode='1' port='1048577' mask='128' exp='depthUP' />
+								<command class_type='input' title='Input' cmdcolor='3610239' cmdcolor_sec='3610239' mode='1' port='1048577' mask='64' exp='depthDown' />
+								<command class_type='decision' title='Decision' cmdcolor='3568629' cmdcolor_sec='3568629' exp='depthUP' swap='0' >
+									<flowline >
+										<command class_type='decision' title='Decision' cmdcolor='3568629' cmdcolor_sec='3568629' exp='depth &lt; 32667' swap='0' >
+											<flowline >
+												<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+													<exp exp='Depth = Depth + 100' />
+												</command>
+												<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='Cursor' >
+													<argument exp='0' />
+													<argument exp='20' />
+												</command>
+												<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='PrintNumber' >
+													<argument exp='depth' />
+												</command>
+											</flowline>
+											<flowline />
+										</command>
+									</flowline>
+									<flowline >
+										<command class_type='decision' title='Decision' cmdcolor='3568629' cmdcolor_sec='3568629' exp='depthDown' swap='0' >
+											<flowline >
+												<command class_type='decision' title='Decision' cmdcolor='3568629' cmdcolor_sec='3568629' exp='depth &gt; 100' swap='0' >
+													<flowline >
+														<command class_type='calculation' title='Calculation' cmdcolor='7895044' cmdcolor_sec='7895044' >
+															<exp exp='Depth = Depth - 100' />
+														</command>
+														<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='Cursor' >
+															<argument exp='0' />
+															<argument exp='20' />
+														</command>
+														<command class_type='call' title='Call Component Macro' cmdcolor='1975743' cmdcolor_sec='1975743' component='lcd_eb005' macro='PrintNumber' >
+															<argument exp='depth' />
+														</command>
+													</flowline>
+													<flowline />
+												</command>
+											</flowline>
+											<flowline />
+										</command>
+									</flowline>
+								</command>
+							</flowline>
+						</command>
+					</flowline>
+				</macro>
+			</macros>
+			<component class_type='ref' guid='14683ea8-5a08-4b3a-be2d-3dea3e17e720' vmin='3' vmaj='1' codename='pot_color_cap1' x='-10' y='-110' z='0' xsz='25.1419' ysz='25.1419' zsz='18.45' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='1' >
+				<resources />
+				<properties />
+				<values >
+					<value target='angle_start' data='225.000000' />
+					<value target='angle_sweep' data='270.000000' />
+					<value target='cap_color' data='192' />
+					<value target='point_color' data='16777215' />
+					<value target='ScopeTraces' data='0' />
+					<value target='channel' data='9' />
+					<value target='vrefvol' data='500' />
+					<value target='vrefop' data='000' />
+					<value target='convspd' data='003' />
+					<value target='actime' data='40' />
+					<value target='bits' data='10' />
+					<value target='bitmul' data='0.004883' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='d29dda88-17de-4008-991a-c881890d4c57' vmin='1' vmaj='1' codename='lcd_eb005' x='40' y='-60' z='6.125' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='Pin_Data_0' data='$PORTD.0' />
+					<value target='Pin_Data_1' data='$PORTD.1' />
+					<value target='Pin_Data_2' data='$PORTD.2' />
+					<value target='Pin_Data_3' data='$PORTD.3' />
+					<value target='Pin_RS' data='$PORTD.8' />
+					<value target='Pin_E' data='$PORTD.9' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='96862c4d-debc-45fa-9433-74711a4b9a3b' vmin='3' vmaj='1' codename='SPI_Master1' x='0' y='-10' z='0' xsz='60' ysz='26' zsz='1.51' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='CHANNEL' data='001' />
+					<value target='PR_SCALE' data='002' />
+					<value target='CKP' data='000' />
+					<value target='CKE' data='000' />
+					<value target='SMP' data='000' />
+					<value target='MOSI' data='$PORTF.3' />
+					<value target='MISO' data='$PORTF.2' />
+					<value target='CLK' data='$PORTF.6' />
+					<value target='MosiRemap' data='' />
+					<value target='MisoRemap' data='' />
+					<value target='ClkRemap' data='' />
+					<value target='label' data='SPI  Master' />
+					<value target='ScopeTraces' data='0' />
+					<value target='ConsoleData' data='0' />
+					<value target='Injector' data='000' />
+					<value target='InjectorHandle' data='0' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='dfb4d07a-3d70-45d5-83ef-07e3c95d86ab' vmin='4' vmaj='1' codename='lut1' x='60' y='-10' z='0' xsz='25' ysz='25' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' interactive='1' solid='1' layer='0' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='StorageType' data='001' />
+					<value target='Sign' data='001' />
+					<value target='intfixed' data='0,2058,4107,6140,8149,10126,12063,13952,15786,17558,19261,20887,22431,23887,25248,26510,27667,28715,29649,30467,31164,31739,32188,32510,32703,32767,32703,32510,32188,31739,31164,30467,29649,28715,27667,26510,25248,23887,22431,20887,19261,17558,15786,13952,12063,10126,8149,6140,4107,2058,0,-2058,-4107,-6140,-8149,-10126,-12063,-13952,-15786,-17558,-19261,-20887,-22431,-23887,-25248,-26510,-27667,-28715,-29649,-30467,-31164,-31739,-32188,-32510,-32703,-32768,-32703,-32510,-32188,-31739,-31164,-30467,-29649,-28715,-27667,-26510,-25248,-23887,-22431,-20887,-19261,-17558,-15786,-13952,-12063,-10126,-8149,-6140,-4107,-2058,0
+' />
+					<value target='floatfixed' data='1.0,1.06279052,1.125333234,1.187381315,1.248689887,1.309016994,1.368124553,1.425779292,1.481753674,1.535826795,1.587785252,1.63742399,1.684547106,1.728968627,1.770513243,1.809016994,1.844327926,1.87630668,1.904827052,1.929776486,1.951056516,1.968583161,1.982287251,1.992114701,1.998026728,2,1.998026728,1.992114701,1.982287251,1.968583161,1.951056516,1.929776486,1.904827052,1.87630668,1.844327926,1.809016994,1.770513243,1.728968627,1.684547106,1.63742399,1.587785252,1.535826795,1.481753674,1.425779292,1.368124553,1.309016994,1.248689887,1.187381315,1.125333234,1.06279052,1.0,0.93720948,0.874666766,0.812618685,0.751310113,0.690983006,0.631875447,0.574220708,0.518246326,0.464173205,0.412214748,0.36257601,0.315452894,0.271031373,0.229486757,0.190983006,0.155672074,0.12369332,0.095172948,0.070223514,0.048943484,0.031416839,0.017712749,0.007885299,0.001973272,0,0.001973272,0.007885299,0.017712749,0.031416839,0.048943484,0.070223514,0.095172948,0.12369332,0.155672074,0.190983006,0.229486757,0.271031373,0.315452894,0.36257601,0.412214748,0.464173205,0.518246326,0.574220708,0.631875447,0.690983006,0.751310113,0.812618685,0.874666766,0.93720948' />
+					<value target='fixedexp' data='0' />
+					<value target='EmbedIntoC' data='1' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+		</component>
+	</components>
+	<keymap />
+	<panel2d shadows='0' lighting='0' brightness='0' perspective='0' >
+		<background rgb='9737364' img='' style='0' />
+		<camera xe='0' ye='0' ze='300' xt='0' yt='0' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+	</panel2d>
+	<panel3d shadows='0' lighting='0' brightness='0' perspective='0' >
+		<background rgb='8409120' img='' style='0' />
+		<table rgb='7360576' img='' style='0' size='25' />
+		<camera xe='92.3371' ye='-97.1283' ze='313.322' xt='92.3371' yt='-97.1283' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+		<camerakey0 xe='0' ye='0' ze='300' xt='0' yt='0' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+		<camerakey1 xe='-3.67394e-14' ye='0' ze='-300' xt='0' yt='0' zt='0' xquat='0' yquat='1' zquat='0' wquat='6.12323e-17' />
+		<camerakey2 xe='0' ye='-300' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.707107' yquat='0' zquat='0' wquat='0.707107' />
+		<camerakey3 xe='-3.67394e-14' ye='300' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-4.32978e-17' yquat='0.707107' zquat='0.707107' wquat='4.32978e-17' />
+		<camerakey4 xe='-300' ye='-6.66134e-14' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.5' yquat='0.5' zquat='0.5' wquat='0.5' />
+		<camerakey5 xe='300' ye='-6.66134e-14' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.5' yquat='-0.5' zquat='-0.5' wquat='0.5' />
+		<camerakey6 xe='-173.205' ye='-173.205' ze='173.205' xt='0' yt='0' zt='0' xquat='-0.424708' yquat='0.17592' zquat='0.339851' wquat='0.820473' />
+	</panel3d>
+	<layout >
+		<view type='0' name='Timer3_Interrupt' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAH4DAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='Timer2_Interrupt' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAH4DAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='Timer1_Interrupt' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAH4DAAA' zoom='65' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='Main' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAH4DAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='Write_DAC' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAH4DAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='Read_ADC' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAATQUAAH4DAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+	</layout>
+</document>
+</root>
